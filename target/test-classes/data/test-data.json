@@ -1,0 +1,22 @@
+{
+    "newUser": {
+        "name": "morpheus",
+        "job": "leader"
+    },
+    "updateUser": {
+        "name": "morpheus",
+        "job": "zion resident"
+    },
+    "validRegister": {
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
+    },
+    "validLogin": {
+        "email": "eve.holt@reqres.in",
+        "password": "cityslicka"
+    },
+    "invalidCredentials": {
+        "email": "invalid@email.com",
+        "password": "wrongpassword"
+    }
+}

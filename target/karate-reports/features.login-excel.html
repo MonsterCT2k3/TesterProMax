@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1245f8e7-00df-42f1-8e20-4795f4abad9e",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.login-excel</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-16 07:19:54 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:13]"><span>[1:13]</span> <span>Chạy tất cả test cases từ Excel Login sheet</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/login-excel.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Login Testing từ Excel - Sheet Login</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:13]</span>
+                <span class="scenario-name">Chạy tất cả test cases từ Excel Login sheet</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4450</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:19:50.152 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readExcel = read(&#39;classpath:utils/read-excel.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def writeToExcel = read(&#39;classpath:utils/write-excel.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def excelFilePath = &#39;src/test/java/data/data.xlsx&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sheetName = &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = readExcel(excelFilePath, sheetName)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">582</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">19:19:50.785 Headers found: [
+  &quot;email&quot;,
+  &quot;password&quot;,
+  &quot;expectedStatus&quot;,
+  &quot;expectedResult&quot;,
+  &quot;testDescription&quot;,
+  &quot;responseStatus&quot;,
+  &quot;result&quot;
+]
+ 
+19:19:50.816 Read data from Excel: [
+  {
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;expectedStatus&quot;: 200.0,
+    &quot;expectedResult&quot;: &quot;success&quot;,
+    &quot;testDescription&quot;: &quot;Valid login credentials&quot;,
+    &quot;responseStatus&quot;: &quot;200&quot;,
+    &quot;result&quot;: &quot;{\&quot;token\&quot;:\&quot;QpwL5tke4Pnpja7X4\&quot;}&quot;
+  },
+  {
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Missing password&quot;,
+    &quot;testDescription&quot;: &quot;Login without password&quot;,
+    &quot;responseStatus&quot;: &quot;400&quot;,
+    &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;Missing password\&quot;}&quot;
+  },
+  {
+    &quot;email&quot;: &quot;invalid@email.com&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;user not found&quot;,
+    &quot;testDescription&quot;: &quot;Login with invalid email&quot;,
+    &quot;responseStatus&quot;: &quot;400&quot;,
+    &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;user not found\&quot;}&quot;
+  },
+  {
+    &quot;email&quot;: &quot;&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Missing email or username&quot;,
+    &quot;testDescription&quot;: &quot;Login without email&quot;,
+    &quot;responseStatus&quot;: &quot;400&quot;,
+    &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;Missing email or username\&quot;}&quot;
+  },
+  {
+    &quot;email&quot;: &quot;eve.holt@reqre.in&quot;,
+    &quot;password&quot;: &quot;wrongp12assword5&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;user not found&quot;,
+    &quot;testDescription&quot;: &quot;Login with wrong password&quot;,
+    &quot;responseStatus&quot;: &quot;400&quot;,
+    &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;user not found\&quot;}&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Đọc được &#39; + testData.length + &#39; test cases từ Excel sheet: &#39; + sheetName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">19:19:50.824 [print] Đọc được 5 test cases từ Excel sheet: login 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testResults = []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def runTest =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">function(testCase, index) {
+  karate.log(&#39;Đang chạy test case #&#39; + (index + 1) + &#39;: &#39; + testCase.testDescription);
+        
+  var requestBody = {};
+  if (testCase.email &amp;&amp; testCase.email !== &#39;&#39;) {
+    requestBody.email = testCase.email;
+  }
+  if (testCase.password &amp;&amp; testCase.password !== &#39;&#39;) {
+    requestBody.password = testCase.password;
+  }
+        
+  var response = karate.call(&#39;classpath:features/helpers/login-single-call.feature&#39;, {
+    email: testCase.email || &#39;&#39;,
+    password: testCase.password || &#39;&#39;
+  });
+        
+  var actualStatus = response.actualStatus;
+  var actualResult = &#39;&#39;;
+        
+  // Ghi response thực tế vào result
+  if (response.actualResponse) {
+    actualResult = JSON.stringify(response.actualResponse);
+  } else {
+    actualResult = &#39;No response body&#39;;
+  }
+        
+  // Kiểm tra xem kết quả có khớp với expected không (chỉ để log)
+  var isExpectedStatus = (actualStatus == testCase.expectedStatus);
+  if (!isExpectedStatus) {
+    karate.log(&#39;STATUS MISMATCH - Expected: &#39; + testCase.expectedStatus + &#39;, Actual: &#39; + actualStatus);
+  }
+        
+  // Log chi tiết để debug
+  karate.log(&#39;Test Case Data:&#39;, testCase);
+  karate.log(&#39;Expected Status:&#39;, testCase.expectedStatus);
+  karate.log(&#39;Expected Result:&#39;, testCase.expectedResult);
+  karate.log(&#39;Actual Status:&#39;, actualStatus);
+  karate.log(&#39;Is Expected Status:&#39;, isExpectedStatus);
+        
+  karate.log(&#39;Test case #&#39; + (index + 1) + &#39; - Status: &#39; + actualStatus + &#39;, Result: &#39; + actualResult);
+        
+  return {
+    responseStatus: actualStatus,
+    result: actualResult
+  };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chạy từng test case</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def results = karate.map(testData, runTest)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3737</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65">19:19:54.583 Test Case Data: {
+  &quot;email&quot;: &quot;eve.holt@reqre.in&quot;,
+  &quot;password&quot;: &quot;wrongp12assword5&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;user not found&quot;,
+  &quot;testDescription&quot;: &quot;Login with wrong password&quot;,
+  &quot;responseStatus&quot;: &quot;400&quot;,
+  &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;user not found\&quot;}&quot;
+}
+ 
+19:19:54.583 Expected Status: 400.0 
+19:19:54.583 Expected Result: user not found 
+19:19:54.583 Actual Status: 400 
+19:19:54.583 Is Expected Status: true 
+19:19:54.583 Test case #5 - Status: 400, Result: {&quot;error&quot;:&quot;user not found&quot;} 
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">1094</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">19:19:50.851 Đang chạy test case #1: Valid login credentials 
+19:19:50.872 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1079</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">19:19:51.160 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Content-Length: 54
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+  &quot;password&quot;: &quot;cityslicka&quot;
+}
+
+
+19:19:51.957 response time in milliseconds: 794
+1 &lt; 200
+1 &lt; Date: Mon, 16 Jun 2025 12:19:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 29
+1 &lt; Connection: keep-alive
+1 &lt; Cf-Ray: 950a42023ad9088f-HKG
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750076391&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=pjtNLfGvZE%2Bxb2LSp4oqRlZWu4zATZks3XCyREfiz0k%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750076391&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=pjtNLfGvZE%2Bxb2LSp4oqRlZWu4zATZks3XCyREfiz0k%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 98
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Etag: W/&quot;1d-lGCrvD6B7Qzk11+2C98+nGhhuec&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=30203&amp;min_rtt=25686&amp;rtt_var=12859&amp;sent=7&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3108&amp;recv_bytes=904&amp;delivery_rate=169586&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=5910ef48bc5fc887&amp;ts=638&amp;x=0&quot;
+{
+  &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">19:19:51.961 [print] Calling login API với email: eve.holt@reqres.in password: cityslicka 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">19:19:51.961 [print] Response status: 200 body: {
+  &quot;token&quot;: &quot;QpwL5tke4Pnpja7X4&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">634</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">19:19:51.972 Test Case Data: {
+  &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+  &quot;password&quot;: &quot;cityslicka&quot;,
+  &quot;expectedStatus&quot;: 200.0,
+  &quot;expectedResult&quot;: &quot;success&quot;,
+  &quot;testDescription&quot;: &quot;Valid login credentials&quot;,
+  &quot;responseStatus&quot;: &quot;200&quot;,
+  &quot;result&quot;: &quot;{\&quot;token\&quot;:\&quot;QpwL5tke4Pnpja7X4\&quot;}&quot;
+}
+ 
+19:19:51.973 Expected Status: 200.0 
+19:19:51.973 Expected Result: success 
+19:19:51.973 Actual Status: 200 
+19:19:51.973 Is Expected Status: true 
+19:19:51.974 Test case #1 - Status: 200, Result: {&quot;token&quot;:&quot;QpwL5tke4Pnpja7X4&quot;} 
+19:19:51.974 Đang chạy test case #2: Login without password 
+19:19:51.995 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">626</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">19:19:51.999 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Content-Length: 44
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+  &quot;password&quot;: &quot;&quot;
+}
+
+
+19:19:52.622 response time in milliseconds: 622
+1 &lt; 400
+1 &lt; Date: Mon, 16 Jun 2025 12:19:51 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 28
+1 &lt; Connection: keep-alive
+1 &lt; Cf-Ray: 950a42067babd4b4-HKG
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750076391&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=pjtNLfGvZE%2Bxb2LSp4oqRlZWu4zATZks3XCyREfiz0k%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750076391&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=pjtNLfGvZE%2Bxb2LSp4oqRlZWu4zATZks3XCyREfiz0k%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 96
+1 &lt; Ratelimit-Reset: 60
+1 &lt; Etag: W/&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=22340&amp;min_rtt=22152&amp;rtt_var=8683&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=1341&amp;delivery_rate=61377&amp;cwnd=225&amp;unsent_bytes=0&amp;cid=733aa68a009c756b&amp;ts=567&amp;x=0&quot;
+{
+  &quot;error&quot;: &quot;Missing password&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">19:19:52.625 [print] Calling login API với email: eve.holt@reqres.in password:  
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">19:19:52.626 [print] Response status: 400 body: {
+  &quot;error&quot;: &quot;Missing password&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">637</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">19:19:52.627 Test Case Data: {
+  &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+  &quot;password&quot;: &quot;&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Missing password&quot;,
+  &quot;testDescription&quot;: &quot;Login without password&quot;,
+  &quot;responseStatus&quot;: &quot;400&quot;,
+  &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;Missing password\&quot;}&quot;
+}
+ 
+19:19:52.627 Expected Status: 400.0 
+19:19:52.627 Expected Result: Missing password 
+19:19:52.627 Actual Status: 400 
+19:19:52.627 Is Expected Status: true 
+19:19:52.628 Test case #2 - Status: 400, Result: {&quot;error&quot;:&quot;Missing password&quot;} 
+19:19:52.628 Đang chạy test case #3: Login with invalid email 
+19:19:52.637 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">633</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">19:19:52.640 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Content-Length: 54
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;invalid@email.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+19:19:53.271 response time in milliseconds: 630
+1 &lt; 400
+1 &lt; Date: Mon, 16 Jun 2025 12:19:52 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 26
+1 &lt; Connection: keep-alive
+1 &lt; Cf-Ray: 950a420a7825851d-HKG
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750076392&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=zdR7P0C2S3uhMhrXk8%2B9ly6bAmofT9p5uwKeV9z8qts%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750076392&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=zdR7P0C2S3uhMhrXk8%2B9ly6bAmofT9p5uwKeV9z8qts%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 94
+1 &lt; Ratelimit-Reset: 59
+1 &lt; Etag: W/&quot;1a-EGIcyP6BIiCXl5Gb1aph5CGf4VQ&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=22685&amp;min_rtt=22565&amp;rtt_var=8702&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=1351&amp;delivery_rate=61721&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=752a5a485851ee1a&amp;ts=578&amp;x=0&quot;
+{
+  &quot;error&quot;: &quot;user not found&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">19:19:53.273 [print] Calling login API với email: invalid@email.com password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">19:19:53.273 [print] Response status: 400 body: {
+  &quot;error&quot;: &quot;user not found&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">650</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">19:19:53.274 Test Case Data: {
+  &quot;email&quot;: &quot;invalid@email.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;user not found&quot;,
+  &quot;testDescription&quot;: &quot;Login with invalid email&quot;,
+  &quot;responseStatus&quot;: &quot;400&quot;,
+  &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;user not found\&quot;}&quot;
+}
+ 
+19:19:53.274 Expected Status: 400.0 
+19:19:53.274 Expected Result: user not found 
+19:19:53.274 Actual Status: 400 
+19:19:53.274 Is Expected Status: true 
+19:19:53.275 Test case #3 - Status: 400, Result: {&quot;error&quot;:&quot;user not found&quot;} 
+19:19:53.275 Đang chạy test case #4: Login without email 
+19:19:53.284 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">646</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">19:19:53.286 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Content-Length: 37
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+19:19:53.930 response time in milliseconds: 643
+1 &lt; 400
+1 &lt; Date: Mon, 16 Jun 2025 12:19:53 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 37
+1 &lt; Connection: keep-alive
+1 &lt; Cf-Ray: 950a420e9b3b106a-HKG
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750076393&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NZcTrBFJ5EjAi2znJc914GEZBET9X3fM0YSCgBMXVFI%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750076393&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NZcTrBFJ5EjAi2znJc914GEZBET9X3fM0YSCgBMXVFI%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 92
+1 &lt; Ratelimit-Reset: 59
+1 &lt; Etag: W/&quot;25-Ik70kof1lbc973ShN5FoVPxYn7A&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=31010&amp;min_rtt=26347&amp;rtt_var=13211&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=1334&amp;delivery_rate=55110&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=6067664034161155&amp;ts=580&amp;x=0&quot;
+{
+  &quot;error&quot;: &quot;Missing email or username&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">19:19:53.932 [print] Calling login API với email:  password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">19:19:53.932 [print] Response status: 400 body: {
+  &quot;error&quot;: &quot;Missing email or username&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">641</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">19:19:53.933 Test Case Data: {
+  &quot;email&quot;: &quot;&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Missing email or username&quot;,
+  &quot;testDescription&quot;: &quot;Login without email&quot;,
+  &quot;responseStatus&quot;: &quot;400&quot;,
+  &quot;result&quot;: &quot;{\&quot;error\&quot;:\&quot;Missing email or username\&quot;}&quot;
+}
+ 
+19:19:53.934 Expected Status: 400.0 
+19:19:53.934 Expected Result: Missing email or username 
+19:19:53.934 Actual Status: 400 
+19:19:53.934 Is Expected Status: true 
+19:19:53.934 Test case #4 - Status: 400, Result: {&quot;error&quot;:&quot;Missing email or username&quot;} 
+19:19:53.934 Đang chạy test case #5: Login with wrong password 
+19:19:53.942 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">638</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">19:19:53.944 request:
+1 &gt; POST https://reqres.in/api/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; x-api-key: reqres-free-v1
+1 &gt; Content-Length: 59
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;eve.holt@reqre.in&quot;,
+  &quot;password&quot;: &quot;wrongp12assword5&quot;
+}
+
+
+19:19:54.580 response time in milliseconds: 636
+1 &lt; 400
+1 &lt; Date: Mon, 16 Jun 2025 12:19:53 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 26
+1 &lt; Connection: keep-alive
+1 &lt; Cf-Ray: 950a4212a99c055c-HKG
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750076393&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NZcTrBFJ5EjAi2znJc914GEZBET9X3fM0YSCgBMXVFI%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750076393&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NZcTrBFJ5EjAi2znJc914GEZBET9X3fM0YSCgBMXVFI%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Ratelimit-Policy: 100;w=60
+1 &lt; Ratelimit-Limit: 100
+1 &lt; Ratelimit-Remaining: 90
+1 &lt; Ratelimit-Reset: 58
+1 &lt; Etag: W/&quot;1a-EGIcyP6BIiCXl5Gb1aph5CGf4VQ&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=24575&amp;min_rtt=24328&amp;rtt_var=9618&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=219&amp;recv_bytes=1356&amp;delivery_rate=55188&amp;cwnd=250&amp;unsent_bytes=0&amp;cid=6a3c45ad59ae8bb0&amp;ts=579&amp;x=0&quot;
+{
+  &quot;error&quot;: &quot;user not found&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">19:19:54.582 [print] Calling login API với email: eve.holt@reqre.in password: wrongp12assword5 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">19:19:54.582 [print] Response status: 400 body: {
+  &quot;error&quot;: &quot;user not found&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testResults = results</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Hoàn thành tất cả test cases. Đang ghi kết quả vào Excel...&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.67">19:19:54.585 [print] Hoàn thành tất cả test cases. Đang ghi kết quả vào Excel... 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ghi kết quả vào Excel</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.70">19:19:54.630 Lỗi khi ghi Excel file: src\test\java\data\data.xlsx (The process cannot access the file because it is being used by another process) 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (writeSuccess) karate.log(&#39;Đã ghi kết quả vào Excel thành công!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!writeSuccess) karate.log(&#39;Lỗi khi ghi kết quả vào Excel!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.72">19:19:54.633 Lỗi khi ghi kết quả vào Excel! 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
