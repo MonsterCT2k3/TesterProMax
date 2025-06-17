@@ -1,4 +1,5 @@
 runners\auth\RegisterExcelTestRunner.class
+runners\auth\RegisterComprehensiveTestRunner.class
 runners\SetupDataRunner.class
 runners\AllTestsRunner.class
 runners\auth\LoginExcelTestRunner.class

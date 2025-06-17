@@ -1,11 +1,28 @@
-Feature: Register Single Call Helper - Thực hiện một API call register duy nhất
+@ignore
+Feature: Register Single Call Helper
 
-Scenario: Gọi API register với email và password
+Scenario: Register Single Call
     * def config = karate.call('classpath:karate-config.js')
-    Given url config.baseUrl + '/register'
-    And request { email: '#(email)', password: '#(password)' }
-    When method POST
-    Then def actualStatus = responseStatus
-    And def actualResponse = response
-    And print 'Calling register API với email:', email, 'password:', password
-    And print 'Response status:', actualStatus, 'body:', actualResponse 
+    * url config.baseUrl
+    
+    * def requestData = 
+    """
+    {
+        email: '#(email)',
+        password: '#(password)',
+        name: '#(name)',
+        username: '#(username)',
+        phoneNumber: '#(phoneNumber)'
+    }
+    """
+    
+    Given path '/auth/register'
+    And request requestData
+    When method post
+    Then def responseStatus = karate.get('responseStatus')
+    And def response = karate.get('response')
+    
+    * print 'Register API called with:'
+    * print 'Request:', requestData
+    * print 'Response Status:', responseStatus
+    * print 'Response Body:', response 

@@ -37,14 +37,14 @@ function addSampleDataToExcel() {
         // Dữ liệu mẫu cho login
         var loginData = [
             {
-                email: 'eve.holt@reqres.in',
-                password: 'cityslicka',
+                email: 'nam@gmail.com',
+                password: '123456',
                 expectedStatus: 200,
                 expectedResult: 'success',
                 testDescription: 'Valid login credentials'
             },
             {
-                email: 'eve.holt@reqres.in',
+                email: 'nam@gmail.com',
                 password: '',
                 expectedStatus: 400,
                 expectedResult: 'Missing password',
@@ -65,7 +65,7 @@ function addSampleDataToExcel() {
                 testDescription: 'Login without email'
             },
             {
-                email: 'eve.holt@reqres.in',
+                email: 'nam@gmail.com',
                 password: 'wrongpassword',
                 expectedStatus: 400,
                 expectedResult: 'user not found',
@@ -94,14 +94,14 @@ function addSampleDataToExcel() {
                 testDescription: 'TC: Email không hợp lệ - thiếu phần username'
             },
             {
-                email: 'eve.holt@reqres.in',
+                email: 'nam@gmail.com',
                 password: '12',
                 expectedStatus: 400,
                 expectedResult: 'Password must be between X and Y characters',
                 testDescription: 'TC: Password quá ngắn'
             },
             {
-                email: 'eve.holt@reqres.in',
+                email: 'nam@gmail.com',
                 password: 'verylongpasswordthatexceedsthenormallimitsforpasswordlengthvalidationwhichshouldnotbeaccepted123456789',
                 expectedStatus: 400,
                 expectedResult: 'Password must be between X and Y characters',
@@ -115,7 +115,7 @@ function addSampleDataToExcel() {
                 testDescription: 'TC: SQL Injection trong email'
             },
             {
-                email: 'eve.holt@reqres.in',
+                email: 'nam@gmail.com',
                 password: "' OR '1'='1",
                 expectedStatus: 400,
                 expectedResult: 'Invalid input',
@@ -129,7 +129,7 @@ function addSampleDataToExcel() {
                 testDescription: 'TC: XSS trong email'
             },
             {
-                email: 'eve.holt@reqres.in',
+                email: 'nam@gmail.com',
                 password: '<script>alert("xss")</script>',
                 expectedStatus: 400,
                 expectedResult: 'Invalid input',
@@ -202,21 +202,21 @@ function addSampleDataToExcel() {
         // Dữ liệu mẫu cho register
         var registerData = [
             {
-                email: 'eve.holt@reqres.in',
-                password: 'pistol',
+                email: 'nam@gmail.com',
+                password: '123456',
                 expectedStatus: 200,
                 expectedResult: 'success',
                 testDescription: 'Valid register credentials'
             },
             {
-                email: 'sydney@fife',
+                email: 'nam@gmail.com',
                 password: '',
                 expectedStatus: 400,
                 expectedResult: 'Missing password',
                 testDescription: 'Register without password'
             },
             {
-                email: 'test@reqres.in',
+                email: 'test@example.com',
                 password: 'test123',
                 expectedStatus: 400,
                 expectedResult: 'user not found',

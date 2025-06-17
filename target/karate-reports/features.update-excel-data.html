@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1245f8e7-00df-42f1-8e20-4795f4abad9e",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.update-excel-data</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-17 03:13:40 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Cập nhật dữ liệu login trong file data.xlsx</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/update-excel-data.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Cập nhật dữ liệu đăng nhập trong Excel</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Cập nhật dữ liệu login trong file data.xlsx</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>38</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref failed">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>karate.call(&#39;classpath:utils/update-login-data.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">38</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:13:39.928 karate.env system property was: null 
+15:13:40.006 classpath:features/update-excel-data.feature:4
+* karate.call(&#39;classpath:utils/update-login-data.js&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: karate.call(&#39;classpath:utils/update-login-data.js&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function updateLoginData() {
+02:     var FileInputStream = Java.type(&#39;java.io.FileInputStream&#39;);
+03:     var FileOutputStream = Java.type(&#39;java.io.FileOutputStream&#39;);
+04:     var XSSFWorkbook = Java.type(&#39;org.apache.poi.xssf.usermodel.XSSFWorkbook&#39;);
+05:     var File = Java.type(&#39;java.io.File&#39;);
+06: 
+07:     try {
+08:         var filePath = &#39;src/test/java/data/data.xlsx&#39;;
+09:         var file = new File(filePath);
+10:         var workbook;
+11: 
+12:         // Mở file Excel hiện có
+13:         if (file.exists()) {
+14:             var fis = new FileInputStream(file);
+15:             workbook = new XSSFWorkbook(fis);
+16:             fis.close();
+17:         } else {
+18:             karate.log(&#39;File không tồn tại: &#39; + filePath);
+19:             return false;
+20:         }
+21: 
+22:         // Tạo hoặc lấy sheet &quot;login&quot;
+23:         var loginSheet = workbook.getSheet(&#39;login&#39;);
+24:         if (!loginSheet) {
+25:             loginSheet = workbook.createSheet(&#39;login&#39;);
+26:         }
+27: 
+28:         // Xóa tất cả dữ liệu hiện có (trừ header)
+29:         var lastRowNum = loginSheet.getLastRowNum();
+30:         for (var i = lastRowNum; i &gt;= 1; i--) {
+31:             var row = loginSheet.getRow(i);
+32:             if (row != null) {
+33:                 loginSheet.removeRow(row);
+34:             }
+35:         }
+36: 
+37:         // Tạo header row nếu chưa có
+38:         var headerRow = loginSheet.getRow(0);
+39:         if (!headerRow) {
+40:             headerRow = loginSheet.createRow(0);
+41:         }
+42:         var headers = [&#39;email&#39;, &#39;password&#39;, &#39;expectedStatus&#39;, &#39;expectedResult&#39;, &#39;testDescription&#39;, &#39;responseStatus&#39;, &#39;result&#39;];
+43: 
+44:         for (var i = 0; i &lt; headers.length; i++) {
+45:             var cell = headerRow.getCell(i);
+46:             if (!cell) {
+47:                 cell = headerRow.createCell(i);
+48:             }
+49:             cell.setCellValue(headers[i]);
+50:         }
+51: 
+52:         // Dữ liệu đăng nhập mới theo yêu cầu
+53:         var loginData = [
+54:             {
+55:                 email: &#39;nam@gmail.com&#39;,
+56:                 password: &#39;123456&#39;,
+57:                 expectedStatus: 200,
+58:                 expectedResult: &#39;success&#39;,
+59:                 testDescription: &#39;Valid login credentials - Nam account&#39;
+60:             },
+61:             {
+62:                 email: &#39;nam@gmail.com&#39;,
+63:                 password: &#39;&#39;,
+64:                 expectedStatus: 400,
+65:                 expectedResult: &#39;Missing password&#39;,
+66:                 testDescription: &#39;Login without password - Nam account&#39;
+67:             },
+68:             {
+69:                 email: &#39;invalid@gmail.com&#39;,
+70:                 password: &#39;123456&#39;,
+71:                 expectedStatus: 400,
+72:                 expectedResult: &#39;user not found&#39;,
+73:                 testDescription: &#39;Login with invalid email&#39;
+74:             },
+75:             {
+76:                 email: &#39;&#39;,
+77:                 password: &#39;123456&#39;,
+78:                 expectedStatus: 400,
+79:                 expectedResult: &#39;Missing email or username&#39;,
+80:                 testDescription: &#39;Login without email&#39;
+81:             },
+82:             {
+83:                 email: &#39;nam@gmail.com&#39;,
+84:                 password: &#39;wrongpassword&#39;,
+85:                 expectedStatus: 400,
+86:                 expectedResult: &#39;user not found&#39;,
+87:                 testDescription: &#39;Login with wrong password - Nam account&#39;
+88:             },
+89:             {
+90:                 email: &#39;admin@gmail.com&#39;,
+91:                 password: &#39;admin123&#39;,
+92:                 expectedStatus: 200,
+93:                 expectedResult: &#39;success&#39;,
+94:                 testDescription: &#39;Valid login credentials - Admin account&#39;
+95:             },
+96:             {
+97:                 email: &#39;user@gmail.com&#39;,
+98:                 password: &#39;user123&#39;,
+99:                 expectedStatus: 200,
+100:                 expectedResult: &#39;success&#39;,
+101:                 testDescription: &#39;Valid login credentials - User account&#39;
+102:             },
+103:             {
+104:                 email: &#39;test@gmail.com&#39;,
+105:                 password: &#39;test123&#39;,
+106:                 expectedStatus: 200,
+107:                 expectedResult: &#39;success&#39;,
+108:                 testDescription: &#39;Valid login credentials - Test account&#39;
+109:             },
+110:             {
+111:                 email: &#39;user@&#39;,
+112:                 password: &#39;123456&#39;,
+113:                 expectedStatus: 400,
+114:                 expectedResult: &#39;Invalid email format&#39;,
+115:                 testDescription: &#39;TC: Email không hợp lệ - thiếu domain&#39;
+116:             },
+117:             {
+118:                 email: &#39;user.gmail.com&#39;,
+119:                 password: &#39;123456&#39;,
+120:                 expectedStatus: 400,
+121:                 expectedResult: &#39;Invalid email format&#39;,
+122:                 testDescription: &#39;TC: Email không hợp lệ - thiếu ký tự @&#39;
+123:             },
+124:             {
+125:                 email: &#39;@gmail.com&#39;,
+126:                 password: &#39;123456&#39;,
+127:                 expectedStatus: 400,
+128:                 expectedResult: &#39;Invalid email format&#39;,
+129:                 testDescription: &#39;TC: Email không hợp lệ - thiếu phần username&#39;
+130:             },
+131:             {
+132:                 email: &#39;nam@gmail.com&#39;,
+133:                 password: &#39;12&#39;,
+134:                 expectedStatus: 400,
+135:                 expectedResult: &#39;Password must be between 6 and 20 characters&#39;,
+136:                 testDescription: &#39;TC: Password quá ngắn&#39;
+137:             },
+138:             {
+139:                 email: &#39;nam@gmail.com&#39;,
+140:                 password: &#39;verylongpasswordthatexceedsthenormallimitsforpasswordlength123456789&#39;,
+141:                 expectedStatus: 400,
+142:                 expectedResult: &#39;Password must be between 6 and 20 characters&#39;,
+143:                 testDescription: &#39;TC: Password quá dài&#39;
+144:             },
+145:             {
+146:                 email: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+147:                 password: &#39;123456&#39;,
+148:                 expectedStatus: 400,
+149:                 expectedResult: &#39;Invalid input&#39;,
+150:                 testDescription: &#39;TC: SQL Injection trong email&#39;
+151:             },
+152:             {
+153:                 email: &#39;nam@gmail.com&#39;,
+154:                 password: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+155:                 expectedStatus: 400,
+156:                 expectedResult: &#39;Invalid input&#39;,
+157:                 testDescription: &#39;TC: SQL Injection trong password&#39;
+158:             },
+159:             {
+160:                 email: &#39;&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;@gmail.com&#39;,
+161:                 password: &#39;123456&#39;,
+162:                 expectedStatus: 400,
+163:                 expectedResult: &#39;Invalid input&#39;,
+164:                 testDescription: &#39;TC: XSS trong email&#39;
+165:             },
+166:             {
+167:                 email: &#39;nam@gmail.com&#39;,
+168:                 password: &#39;&lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;&#39;,
+169:                 expectedStatus: 400,
+170:                 expectedResult: &#39;Invalid input&#39;,
+171:                 testDescription: &#39;TC: XSS trong password&#39;
+172:             }
+173:         ];
+174: 
+175:         // Thêm dữ liệu vào sheet
+176:         for (var i = 0; i &lt; loginData.length; i++) {
+177:             var row = loginSheet.createRow(i + 1);
+178:             var data = loginData[i];
+179: 
+180:             row.createCell(0).setCellValue(data.email);
+181:             row.createCell(1).setCellValue(data.password);
+182:             row.createCell(2).setCellValue(data.expectedStatus);
+183:             row.createCell(3).setCellValue(data.expectedResult);
+184:             row.createCell(4).setCellValue(data.testDescription);
+185:             row.createCell(5).setCellValue(&#39;&#39;); // responseStatus - sẽ được điền sau
+186:             row.createCell(6).setCellValue(&#39;&#39;); // result - sẽ được điền sau
+187:         }
+188: 
+189:         // Lưu file
+190:         var fos = new FileOutputStream(file);
+191:         workbook.write(fos);
+192:         fos.close();
+193:         workbook.close();
+194: 
+195:         karate.log(&#39;Đã cập nhật dữ liệu đăng nhập trong file Excel thành công!&#39;);
+196:         karate.log(&#39;Dữ liệu login chính: nam@gmail.com / 123456&#39;);
+197:         karate.log(&#39;Tổng số test cases: &#39; + loginData.length);
+198: 
+199:         return true;
+200: 
+201:     } catch (e) {
+202:         karate.log(&#39;Lỗi khi cập nhật Excel: &#39; + e.message);
+203:         return false;
+204:     }
+205: }
+206: 
+207: // Gọi function
+208: updateLoginData(); )
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:208:0 Expected ) but found updateLoginData
+updateLoginData(); )
+^
+Unnamed:208:19 Expected ; but found )
+updateLoginData(); )
+                   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:164)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:151)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:253)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1288)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:164)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:151)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:features/update-excel-data.feature:4
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref skipped">5</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;Đã hoàn thành cập nhật dữ liệu đăng nhập trong file Excel&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

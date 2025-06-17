@@ -3,14 +3,13 @@ function fn() {
     karate.log('karate.env system property was:', env);
 
     var config = {
-        baseUrl: 'https://reqres.in/api',
+        baseUrl: 'http://localhost:3000',
         timeout: 30000
     };
 
     // Cấu hình headers mặc định
     karate.configure('headers', {
         'Content-Type': 'application/json',
-        'x-api-key': 'reqres-free-v1'
     });
 
     // Cấu hình timeout
