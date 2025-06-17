@@ -1,17 +1,28 @@
-Feature: Register Testing từ Excel - Sheet Register
+Feature: Register Comprehensive Testing - Tất cả các trường hợp test
 
   Background:
     * url baseUrl
     * def readExcel = read('classpath:utils/read-excel.js')
     * def writeToExcel = read('classpath:utils/write-excel.js')
+    * def addRegisterData = read('classpath:utils/add-register-data.js')
     * def excelFilePath = 'src/test/java/data/data.xlsx'
     * def sheetName = 'register'
+
+  Scenario: Setup và chạy comprehensive register test cases
+    # Bước 1: Thêm dữ liệu test cases vào Excel
+    * print '=== BƯỚC 1: SETUP DỮ LIỆU TEST ==='
+    * def setupResult = addRegisterData()
+    * if (!setupResult) karate.fail('Không thể setup dữ liệu test vào Excel!')
+    * print 'Đã setup dữ liệu test vào Excel thành công!'
+    
+    # Bước 2: Đọc dữ liệu từ Excel
+    * print '=== BƯỚC 2: ĐỌC DỮ LIỆU TỪ EXCEL ==='
     * def testData = readExcel(excelFilePath, sheetName)
     * print 'Đọc được ' + testData.length + ' test cases từ Excel sheet: ' + sheetName
     * def testResults = []
-    * def registerSingleCall = read('classpath:features/helpers/register-single-call.feature')
-
-  Scenario: Chạy tất cả test cases từ Excel Register sheet
+    
+    # Bước 3: Chạy từng test case
+    * print '=== BƯỚC 3: CHẠY CÁC TEST CASES ==='
     * def runTest = 
       """
       function(testCase, index) {
@@ -22,6 +33,7 @@ Feature: Register Testing từ Excel - Sheet Register
         karate.log('Password: "' + testCase.password + '"');
         karate.log('Name: "' + testCase.name + '"');
         karate.log('Username: "' + testCase.username + '"');
+        karate.log('PhoneNumber: "' + testCase.phoneNumber + '"');
         karate.log('Expected Status: ' + testCase.expectedStatus);
         karate.log('Expected Result: ' + testCase.expectedResult);
         karate.log('==========================================');
@@ -39,21 +51,27 @@ Feature: Register Testing từ Excel - Sheet Register
         if (testCase.username && testCase.username !== '' && testCase.username !== 'null') {
           requestBody.username = testCase.username;
         }
+        if (testCase.phoneNumber && testCase.phoneNumber !== '' && testCase.phoneNumber !== 'null') {
+          requestBody.phoneNumber = testCase.phoneNumber;
+        }
         
         var response = karate.call('classpath:features/helpers/register-single-call.feature', {
           email: testCase.email === 'null' ? null : testCase.email,
           password: testCase.password === 'null' ? null : testCase.password,
           name: testCase.name === 'null' ? null : testCase.name,
-          username: testCase.username === 'null' ? null : testCase.username
+          username: testCase.username === 'null' ? null : testCase.username,
+          phoneNumber: testCase.phoneNumber === 'null' ? null : testCase.phoneNumber,
+          expectedStatus: testCase.expectedStatus,
+          expectedResult: testCase.expectedResult
         });
         
-        var actualStatus = response.actualStatus;
+        var actualStatus = response.responseStatus;
         var actualResult = '';
         var testResult = 'FAIL';
         
         // Ghi response thực tế vào result
-        if (response.actualResponse) {
-          actualResult = JSON.stringify(response.actualResponse);
+        if (response.response) {
+          actualResult = JSON.stringify(response.response);
         } else {
           actualResult = 'No response body';
         }
@@ -68,8 +86,6 @@ Feature: Register Testing từ Excel - Sheet Register
           karate.log('✗ TEST CASE #' + (index + 1) + ' FAILED');
           karate.log('  Expected Status: ' + testCase.expectedStatus);
           karate.log('  Actual Status: ' + actualStatus);
-          karate.log('  Expected Result: ' + testCase.expectedResult);
-          karate.log('  Actual Result: ' + actualResult);
         }
         
         karate.log('Actual Status: ' + actualStatus);
@@ -79,7 +95,7 @@ Feature: Register Testing từ Excel - Sheet Register
         
         return {
           responseStatus: actualStatus,
-          result: testResult + ' - ' + actualResult
+          result: actualResult
         };
       }
       """
@@ -88,7 +104,8 @@ Feature: Register Testing từ Excel - Sheet Register
     * def results = karate.map(testData, runTest)
     * def testResults = results
     
-    # Tổng kết kết quả
+    # Bước 4: Tổng kết kết quả
+    * print '=== BƯỚC 4: TỔNG KẾT KẾT QUẢ ==='
     * def passCount = 0
     * def failCount = 0
     * def totalCount = testResults.length
@@ -105,38 +122,15 @@ Feature: Register Testing từ Excel - Sheet Register
       """
     * karate.forEach(testResults, countResults)
     
-    * print '=== TỔNG KẾT KẾT QUẢ ==='
     * print 'TỔNG SỐ TEST CASES: ' + totalCount
     * print 'SỐ TEST PASS: ' + passCount
     * print 'SỐ TEST FAIL: ' + failCount
     * print 'TỶ LỆ PASS: ' + Math.round((passCount * 100.0) / totalCount) + '%'
     
-    # Ghi kết quả vào Excel
-    * print 'Đang ghi kết quả vào Excel...'
+    # Bước 5: Ghi kết quả vào Excel
+    * print '=== BƯỚC 5: GHI KẾT QUẢ VÀO EXCEL ==='
     * def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)
     * if (writeSuccess) karate.log('✓ Đã ghi kết quả vào Excel thành công!')
     * if (!writeSuccess) karate.log('✗ Lỗi khi ghi kết quả vào Excel!')
-
-Scenario Outline: Register Test Case <rowNum>
-    * print '-------------------------------------------------------------------------'
-    * print 'Executing test case #' + rowNum + ': ' + testDescription
-    * print '-------------------------------------------------------------------------'
-
-    # Gọi API register
-    * def result = call registerSingleCall { 
-        email: '#(email)', 
-        password: '#(password)', 
-        name: '#(name)', 
-        username: '#(username)',
-        phoneNumber: '#(phoneNumber)',
-        expectedStatus: '#(expectedStatus)',
-        expectedResult: '#(expectedResult)'
-    }
-
-    # Cập nhật kết quả vào Excel
-    * def writeResult = writeToExcel('register', rowNum, result.responseStatus, result.response)
-    * print 'Test case #' + rowNum + ' completed with status:', result.responseStatus
-    * print 'Response:', result.response
-
-    Examples:
-    | read('classpath:data/data.xlsx', 'register') 
+    
+    * print '=== HOÀN THÀNH COMPREHENSIVE REGISTER TESTING ===' 
