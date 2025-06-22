@@ -24,10 +24,12 @@ function(filePath, sheetName, testResults) {
             return false;
         }
 
-        // Tìm cột responseStatus và result
+        // Tìm các cột cần ghi
         var headerRow = sheet.getRow(0);
         var responseStatusColIndex = -1;
         var resultColIndex = -1;
+        var testStatusColIndex = -1;
+        var failureReasonColIndex = -1;
 
         for (var i = 0; i < headerRow.getLastCellNum(); i++) {
             var cell = headerRow.getCell(i);
@@ -37,6 +39,10 @@ function(filePath, sheetName, testResults) {
                     responseStatusColIndex = i;
                 } else if (cellValue === 'result') {
                     resultColIndex = i;
+                } else if (cellValue === 'testStatus') {
+                    testStatusColIndex = i;
+                } else if (cellValue === 'failureReason') {
+                    failureReasonColIndex = i;
                 }
             }
         }
@@ -73,6 +79,24 @@ function(filePath, sheetName, testResults) {
             }
             var resultValue = result.result || '';
             resultCell.setCellValue(resultValue);
+
+            // Ghi testStatus (nếu có cột này)
+            if (testStatusColIndex !== -1 && result.testStatus) {
+                var testStatusCell = row.getCell(testStatusColIndex);
+                if (!testStatusCell) {
+                    testStatusCell = row.createCell(testStatusColIndex);
+                }
+                testStatusCell.setCellValue(result.testStatus);
+            }
+
+            // Ghi failureReason (nếu có cột này)
+            if (failureReasonColIndex !== -1 && result.failureReason) {
+                var failureReasonCell = row.getCell(failureReasonColIndex);
+                if (!failureReasonCell) {
+                    failureReasonCell = row.createCell(failureReasonColIndex);
+                }
+                failureReasonCell.setCellValue(result.failureReason);
+            }
         }
 
         // Lưu file
@@ -86,4 +110,4 @@ function(filePath, sheetName, testResults) {
         karate.log('Lỗi khi ghi Excel file:', e.message);
         return false;
     }
-} 
+}

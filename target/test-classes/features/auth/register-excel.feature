@@ -1,28 +1,34 @@
-Feature: Register Comprehensive Testing - Tất cả các trường hợp test
+Feature: Register Testing từ Excel - Sheet Register
 
   Background:
     * url baseUrl
     * def readExcel = read('classpath:utils/read-excel.js')
     * def writeToExcel = read('classpath:utils/write-excel.js')
-    * def addRegisterData = read('classpath:utils/add-register-data.js')
     * def excelFilePath = 'src/test/java/data/data.xlsx'
     * def sheetName = 'register'
-
-  Scenario: Setup và chạy comprehensive register test cases
-    # Bước 1: Thêm dữ liệu test cases vào Excel
-    * print '=== BƯỚC 1: SETUP DỮ LIỆU TEST ==='
-    * def setupResult = addRegisterData()
-    * if (!setupResult) karate.fail('Không thể setup dữ liệu test vào Excel!')
-    * print 'Đã setup dữ liệu test vào Excel thành công!'
-    
-    # Bước 2: Đọc dữ liệu từ Excel
-    * print '=== BƯỚC 2: ĐỌC DỮ LIỆU TỪ EXCEL ==='
     * def testData = readExcel(excelFilePath, sheetName)
     * print 'Đọc được ' + testData.length + ' test cases từ Excel sheet: ' + sheetName
     * def testResults = []
-    
-    # Bước 3: Chạy từng test case
-    * print '=== BƯỚC 3: CHẠY CÁC TEST CASES ==='
+
+  Scenario: Chạy tất cả test cases từ Excel Register sheet
+    * def evaluateTestCase = 
+      """
+      function(testCase, actualStatus, actualResponse) {
+        var expectedStatus = testCase.expectedStatus;
+        
+        // Chỉ so sánh Status Code
+        if (actualStatus != expectedStatus) {
+          return {
+            testStatus: 'FAIL',
+            failureReason: 'Status mismatch - Expected: ' + expectedStatus + ', Actual: ' + actualStatus
+          };
+        }
+        
+        // Nếu status code khớp thì PASS
+        return { testStatus: 'PASS', failureReason: '' };
+      }
+      """
+
     * def runTest = 
       """
       function(testCase, index) {
@@ -38,23 +44,6 @@ Feature: Register Comprehensive Testing - Tất cả các trường hợp test
         karate.log('Expected Result: ' + testCase.expectedResult);
         karate.log('==========================================');
         
-        var requestBody = {};
-        if (testCase.email && testCase.email !== '' && testCase.email !== 'null') {
-          requestBody.email = testCase.email;
-        }
-        if (testCase.password && testCase.password !== '' && testCase.password !== 'null') {
-          requestBody.password = testCase.password;
-        }
-        if (testCase.name && testCase.name !== '' && testCase.name !== 'null') {
-          requestBody.name = testCase.name;
-        }
-        if (testCase.username && testCase.username !== '' && testCase.username !== 'null') {
-          requestBody.username = testCase.username;
-        }
-        if (testCase.phoneNumber && testCase.phoneNumber !== '' && testCase.phoneNumber !== 'null') {
-          requestBody.phoneNumber = testCase.phoneNumber;
-        }
-        
         var response = karate.call('classpath:features/helpers/register-single-call.feature', {
           email: testCase.email === 'null' ? null : testCase.email,
           password: testCase.password === 'null' ? null : testCase.password,
@@ -66,71 +55,56 @@ Feature: Register Comprehensive Testing - Tất cả các trường hợp test
         });
         
         var actualStatus = response.responseStatus;
-        var actualResult = '';
-        var testResult = 'FAIL';
+        var actualResponse = response.response;
         
-        // Ghi response thực tế vào result
-        if (response.response) {
-          actualResult = JSON.stringify(response.response);
-        } else {
-          actualResult = 'No response body';
+        // Đánh giá test case
+        var evaluation = evaluateTestCase(testCase, actualStatus, actualResponse);
+        
+        // Log kết quả
+        karate.log('Actual Status: ' + actualStatus);
+        karate.log('Actual Response: ' + JSON.stringify(actualResponse));
+        karate.log('Test Status: ' + evaluation.testStatus);
+        if (evaluation.failureReason) {
+          karate.log('Failure Reason: ' + evaluation.failureReason);
         }
         
-        // Kiểm tra xem kết quả có khớp với expected không
-        var isExpectedStatus = (actualStatus == testCase.expectedStatus);
-        if (isExpectedStatus) {
-          testResult = 'PASS';
+        if (evaluation.testStatus === 'PASS') {
           karate.log('✓ TEST CASE #' + (index + 1) + ' PASSED');
         } else {
-          testResult = 'FAIL';
-          karate.log('✗ TEST CASE #' + (index + 1) + ' FAILED');
-          karate.log('  Expected Status: ' + testCase.expectedStatus);
-          karate.log('  Actual Status: ' + actualStatus);
+          karate.log('✗ TEST CASE #' + (index + 1) + ' FAILED: ' + evaluation.failureReason);
         }
-        
-        karate.log('Actual Status: ' + actualStatus);
-        karate.log('Actual Result: ' + actualResult);
-        karate.log('Test Result: ' + testResult);
         karate.log('==========================================');
         
         return {
           responseStatus: actualStatus,
-          result: actualResult
+          result: actualResponse ? JSON.stringify(actualResponse) : 'No response body',
+          testStatus: evaluation.testStatus,
+          failureReason: evaluation.failureReason || ''
         };
       }
       """
     
-    # Chạy từng test case với detailed logging
+    # Chạy từng test case
     * def results = karate.map(testData, runTest)
     * def testResults = results
     
-    # Bước 4: Tổng kết kết quả
-    * print '=== BƯỚC 4: TỔNG KẾT KẾT QUẢ ==='
-    * def passCount = 0
-    * def failCount = 0
-    * def totalCount = testResults.length
-    
-    * def countResults = 
-      """
-      function(result, index) {
-        if (result.result && result.result.indexOf('PASS') >= 0) {
-          passCount++;
-        } else {
-          failCount++;
-        }
-      }
-      """
-    * karate.forEach(testResults, countResults)
-    
-    * print 'TỔNG SỐ TEST CASES: ' + totalCount
-    * print 'SỐ TEST PASS: ' + passCount
-    * print 'SỐ TEST FAIL: ' + failCount
-    * print 'TỶ LỆ PASS: ' + Math.round((passCount * 100.0) / totalCount) + '%'
-    
-    # Bước 5: Ghi kết quả vào Excel
-    * print '=== BƯỚC 5: GHI KẾT QUẢ VÀO EXCEL ==='
+    # Ghi kết quả vào Excel
+    * print '=== GHI KẾT QUẢ VÀO EXCEL ==='
     * def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)
     * if (writeSuccess) karate.log('✓ Đã ghi kết quả vào Excel thành công!')
     * if (!writeSuccess) karate.log('✗ Lỗi khi ghi kết quả vào Excel!')
     
-    * print '=== HOÀN THÀNH COMPREHENSIVE REGISTER TESTING ===' 
+    # Tổng kết và báo cáo
+    * def passedTests = karate.filter(testResults, function(x) { return x.testStatus === 'PASS' })
+    * def failedTests = karate.filter(testResults, function(x) { return x.testStatus === 'FAIL' })
+    
+    * print '=== REGISTER TEST SUMMARY ==='
+    * print 'Total test cases: ' + testResults.length
+    * print 'Passed: ' + passedTests.length
+    * print 'Failed: ' + failedTests.length
+    * if (testResults.length > 0) print ('Success rate: ' + Math.round((passedTests.length / testResults.length) * 100) + '%')
+    
+    # Warning nếu có test cases failed
+    * if (failedTests.length > 0) karate.log('⚠️ WARNING: ' + failedTests.length + ' out of ' + testResults.length + ' test cases failed')
+    
+    * print '=== HOÀN THÀNH REGISTER TESTING ===' 

@@ -11,6 +11,61 @@ Feature: Login Testing từ Excel - Sheet Login
     * def testResults = []
 
   Scenario: Chạy tất cả test cases từ Excel Login sheet
+    * def evaluateTestCase = 
+      """
+      function(testCase, actualStatus, actualResponse) {
+        var expectedStatus = testCase.expectedStatus;
+        
+        // 1. Kiểm tra Status Code (Bắt buộc)
+        if (actualStatus != expectedStatus) {
+          return {
+            status: 'FAIL',
+            reason: 'Status mismatch: Expected ' + expectedStatus + ', got ' + actualStatus
+          };
+        }
+        
+        // 2. Kiểm tra thêm nếu có expectedResult
+        if (testCase.expectedResult && testCase.expectedResult.trim() !== '') {
+          try {
+            var expectedObj = JSON.parse(testCase.expectedResult);
+            
+            // Kiểm tra success response
+            if (expectedStatus == 200 || expectedStatus == 201) {
+              if (!actualResponse.success && !actualResponse.status) {
+                return {
+                  status: 'FAIL',
+                  reason: 'Missing success indicator in response'
+                };
+              }
+              if (expectedObj.token && !actualResponse.token) {
+                return {
+                  status: 'FAIL',
+                  reason: 'Missing token in success response'
+                };
+              }
+            }
+            
+            // Kiểm tra error response
+            if (expectedStatus >= 400) {
+              if (expectedObj.error && !actualResponse.error && !actualResponse.message) {
+                return {
+                  status: 'FAIL',
+                  reason: 'Missing error message in error response'
+                };
+              }
+            }
+          } catch (e) {
+            karate.log('Could not parse expectedResult as JSON, skipping detailed validation');
+          }
+        }
+        
+        return {
+          status: 'PASS',
+          reason: 'All validations passed'
+        };
+      }
+      """
+
     * def runTest = 
       """
       function(testCase, index) {
@@ -39,10 +94,14 @@ Feature: Login Testing từ Excel - Sheet Login
           actualResult = 'No response body';
         }
         
-        // Kiểm tra xem kết quả có khớp với expected không (chỉ để log)
-        var isExpectedStatus = (actualStatus == testCase.expectedStatus);
-        if (!isExpectedStatus) {
-          karate.log('STATUS MISMATCH - Expected: ' + testCase.expectedStatus + ', Actual: ' + actualStatus);
+        // ===== ĐÁNH GIÁ PASS/FAIL =====
+        var testEvaluation = evaluateTestCase(testCase, actualStatus, response.actualResponse);
+        
+        // Log kết quả đánh giá
+        if (testEvaluation.status === 'FAIL') {
+          karate.log('❌ TEST FAILED - ' + testEvaluation.reason);
+        } else {
+          karate.log('✅ TEST PASSED - ' + testEvaluation.reason);
         }
         
         // Log chi tiết để debug
@@ -50,13 +109,15 @@ Feature: Login Testing từ Excel - Sheet Login
         karate.log('Expected Status:', testCase.expectedStatus);
         karate.log('Expected Result:', testCase.expectedResult);
         karate.log('Actual Status:', actualStatus);
-        karate.log('Is Expected Status:', isExpectedStatus);
+        karate.log('Test Status:', testEvaluation.status);
         
-        karate.log('Test case #' + (index + 1) + ' - Status: ' + actualStatus + ', Result: ' + actualResult);
+        karate.log('Test case #' + (index + 1) + ' - Status: ' + actualStatus + ', Test Result: ' + testEvaluation.status);
         
         return {
           responseStatus: actualStatus,
-          result: actualResult
+          result: actualResult,
+          testStatus: testEvaluation.status,
+          failureReason: testEvaluation.reason
         };
       }
       """
@@ -64,9 +125,27 @@ Feature: Login Testing từ Excel - Sheet Login
     # Chạy từng test case
     * def results = karate.map(testData, runTest)
     * def testResults = results
+    
+    # Đếm số test cases pass/fail
+    * def passedTests = []
+    * def failedTests = []
+    * karate.forEach(testResults, function(test) { if (test.testStatus === 'PASS') passedTests.push(test); else failedTests.push(test); })
+    
+    * print '=== LOGIN TEST SUMMARY ==='
+    * print 'Total test cases: ' + testResults.length
+    * print 'Passed: ' + passedTests.length
+    * print 'Failed: ' + failedTests.length
+    * if (testResults.length > 0) print ('Success rate: ' + Math.round((passedTests.length / testResults.length) * 100) + '%')
+    
+    # Log failed tests
+    * if (failedTests.length > 0) karate.forEach(failedTests, function(test, index) { karate.log('❌ Failed test #' + (index + 1) + ': ' + test.failureReason); })
+    
     * print 'Hoàn thành tất cả test cases. Đang ghi kết quả vào Excel...'
     
     # Ghi kết quả vào Excel
     * def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)
-    * if (writeSuccess) karate.log('Đã ghi kết quả vào Excel thành công!')
-    * if (!writeSuccess) karate.log('Lỗi khi ghi kết quả vào Excel!') 
+    * if (writeSuccess) karate.log('✅ Đã ghi kết quả vào Excel thành công!')
+    * if (!writeSuccess) karate.log('❌ Lỗi khi ghi kết quả vào Excel!')
+    
+    # Warning nếu có test cases failed
+    * if (failedTests.length > 0) karate.log('⚠️ WARNING: ' + failedTests.length + ' out of ' + testResults.length + ' test cases failed') 
