@@ -11,9 +11,11 @@ class LoginPerfTest extends Simulation {
   )
 
   val loginFeature = scenario("Login Performance Test")
-    .exec(karateFeature("classpath:features/performance/login-performance.feature"))
+    .repeat(5) {  // Lặp lại 5 lần mỗi scenario
+      exec(karateFeature("classpath:features/performance/login-performance.feature"))
+    }
 
   setUp(
-    loginFeature.inject(rampUsers(10) during (60 seconds))
+    loginFeature.inject(atOnceUsers(10))  // 10 users đồng thời, mỗi user lặp 5 lần = 50 total
   ).protocols(loginProtocol)
 }

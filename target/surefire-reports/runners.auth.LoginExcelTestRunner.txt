@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: runners.auth.LoginExcelTestRunner
--------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.977 s - in runners.auth.LoginExcelTestRunner
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.326 s - in runners.auth.LoginExcelTestRunner
->>>>>>> c23991a75449adc29a635991d23154f4563be06e
