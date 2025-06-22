@@ -1,3 +1,4 @@
+runners\performance\ApiComparisonRunner.class
 runners\follows\FollowsExcelTestRunner.class
 runners\setup_data\SetupDataRunner.class
 runners\setup_data\SetupChangePasswordDataRunner.class
@@ -6,6 +7,7 @@ runners\posts\GetPostsFeedExcelTestRunner.class
 runners\auth\ChangePasswordExcelTestRunner.class
 runners\setup_data\SetupGetFollowersDataRunner.class
 runners\setup_data\SetupGetPostsFeedDataRunner.class
+runners\performance\SimplePerfRunner.class
 runners\auth\LogoutExcelTestRunner.class
 runners\unlike\UnlikeExcelTestRunner.class
 runners\setup_data\SetupUnlikeDataRunner.class
@@ -13,8 +15,10 @@ runners\auth\LoginExcelTestRunner.class
 runners\auth\ExcelTestRunner.class
 runners\like\LikeExcelTestRunner.class
 runners\setup_data\SetupFollowsDataRunner.class
+performance\utils\PerformanceReport.class
 runners\AllTestsRunner.class
 runners\follows\UnfollowExcelTestRunner.class
+runners\performance\LoginPerfRunner.class
 runners\auth\RegisterExcelTestRunner.class
 runners\follows\GetFollowerExcelTestRunner.class
 runners\setup_data\SetupGetUsersDataRunner.class

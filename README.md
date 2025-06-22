@@ -586,4 +586,22 @@ Executing test case #1: TC1: Đăng ký hợp lệ - Số điện thoại 10 ch�
 
 **📞 Liên hệ hỗ trợ**: Nếu có vấn đề hoặc câu hỏi, vui lòng tạo issue trong repository.
 
-**🎉 Happy Testing!** 🧪✨ 
+**🎉 Happy Testing!** 🧪✨
+
+### 🚀 Kiểm thử hiệu năng (Performance Testing)
+
+#### 1. Chạy kiểm thử hiệu năng cơ bản cho API Login
+```bash
+# Sử dụng JUnit Runner (đơn giản nhất)
+
+mvn test "-Dtest=runners.performance.SimplePerfRunner"
+
+# Chạy với nhiều thông tin báo cáo hơn
+mvn test "-Dtest=runners.performance.LoginPerfRunner"
+
+# So sánh hiệu năng giữa các API
+mvn test "-Dtest=runners.performance.ApiComparisonRunner"
+
+# Hoặc sử dụng Gatling với đường dẫn đầy đủ
+mvn io.gatling:gatling-maven-plugin:4.2.2:test -Dgatling.simulationClass=performance.LoginPerfTest
+```

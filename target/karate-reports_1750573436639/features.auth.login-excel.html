@@ -1,0 +1,6749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"44617fe5-9a18-4a0e-8d6b-fd9788b0cebc",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.auth.login-excel</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-21 11:32:32 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:13]"><span>[1:13]</span> <span>Chạy tất cả test cases từ Excel Login sheet</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/auth/login-excel.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Login Testing từ Excel - Sheet Login</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:13]</span>
+                <span class="scenario-name">Chạy tất cả test cases từ Excel Login sheet</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2863</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">23:32:29.166 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readExcel = read(&#39;classpath:utils/read-excel.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def writeToExcel = read(&#39;classpath:utils/write-excel.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def excelFilePath = &#39;src/test/java/data/data.xlsx&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sheetName = &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = readExcel(excelFilePath, sheetName)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">750</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">23:32:29.925 Headers found: [
+  &quot;email&quot;,
+  &quot;password&quot;,
+  &quot;expectedStatus&quot;,
+  &quot;expectedResult&quot;,
+  &quot;testDescription&quot;,
+  &quot;responseStatus&quot;,
+  &quot;result&quot;
+]
+ 
+23:32:29.996 Read data from Excel: [
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;123456&quot;,
+    &quot;expectedStatus&quot;: 200.0,
+    &quot;expectedResult&quot;: &quot;success&quot;,
+    &quot;testDescription&quot;: &quot;Valid login credentials&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Missing password&quot;,
+    &quot;testDescription&quot;: &quot;Login without password&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;invalid@email.com&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;user not found&quot;,
+    &quot;testDescription&quot;: &quot;Login with invalid email&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Missing email or username&quot;,
+    &quot;testDescription&quot;: &quot;Login without email&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;wrongpassword&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;user not found&quot;,
+    &quot;testDescription&quot;: &quot;Login with wrong password&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;user@&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid email format&quot;,
+    &quot;testDescription&quot;: &quot;TC: Email không hợp lệ - thiếu domain&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;user.example.com&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid email format&quot;,
+    &quot;testDescription&quot;: &quot;TC: Email không hợp lệ - thiếu ký tự @&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;@example.com&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid email format&quot;,
+    &quot;testDescription&quot;: &quot;TC: Email không hợp lệ - thiếu phần username&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;12&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Password must be between X and Y characters&quot;,
+    &quot;testDescription&quot;: &quot;TC: Password quá ngắn&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;verylongpasswordthatexceedsthenormallimitsforpasswordlengthvalidationwhichshouldnotbeaccepted123456789&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Password must be between X and Y characters&quot;,
+    &quot;testDescription&quot;: &quot;TC: Password quá dài&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+    &quot;testDescription&quot;: &quot;TC: SQL Injection trong email&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+    &quot;testDescription&quot;: &quot;TC: SQL Injection trong password&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;&lt;script&gt;alert(\&quot;xss\&quot;)&lt;/script&gt;@test.com&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+    &quot;testDescription&quot;: &quot;TC: XSS trong email&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;password&quot;: &quot;&lt;script&gt;alert(\&quot;xss\&quot;)&lt;/script&gt;&quot;,
+    &quot;expectedStatus&quot;: 400.0,
+    &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+    &quot;testDescription&quot;: &quot;TC: XSS trong password&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;brute.force@test.com&quot;,
+    &quot;password&quot;: &quot;wrongpass1&quot;,
+    &quot;expectedStatus&quot;: 429.0,
+    &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+    &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 1&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;brute.force@test.com&quot;,
+    &quot;password&quot;: &quot;wrongpass2&quot;,
+    &quot;expectedStatus&quot;: 429.0,
+    &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+    &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 2&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;brute.force@test.com&quot;,
+    &quot;password&quot;: &quot;wrongpass3&quot;,
+    &quot;expectedStatus&quot;: 429.0,
+    &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+    &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 3&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;brute.force@test.com&quot;,
+    &quot;password&quot;: &quot;wrongpass4&quot;,
+    &quot;expectedStatus&quot;: 429.0,
+    &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+    &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 4&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;brute.force@test.com&quot;,
+    &quot;password&quot;: &quot;wrongpass5&quot;,
+    &quot;expectedStatus&quot;: 429.0,
+    &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+    &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 5&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  },
+  {
+    &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+    &quot;password&quot;: &quot;cityslicka&quot;,
+    &quot;expectedStatus&quot;: 200.0,
+    &quot;expectedResult&quot;: &quot;success&quot;,
+    &quot;testDescription&quot;: &quot;Valid login credentials&quot;,
+    &quot;responseStatus&quot;: &quot;&quot;,
+    &quot;result&quot;: &quot;&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Đọc được &#39; + testData.length + &#39; test cases từ Excel sheet: &#39; + sheetName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">23:32:30.010 [print] Đọc được 20 test cases từ Excel sheet: login 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testResults = []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def runTest =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">function(testCase, index) {
+  karate.log(&#39;Đang chạy test case #&#39; + (index + 1) + &#39;: &#39; + testCase.testDescription);
+        
+  var requestBody = {};
+  if (testCase.email &amp;&amp; testCase.email !== &#39;&#39;) {
+    requestBody.email = testCase.email;
+  }
+  if (testCase.password &amp;&amp; testCase.password !== &#39;&#39;) {
+    requestBody.password = testCase.password;
+  }
+        
+  var response = karate.call(&#39;classpath:features/helpers/login-single-call.feature&#39;, {
+    email: testCase.email || &#39;&#39;,
+    password: testCase.password || &#39;&#39;
+  });
+        
+  var actualStatus = response.actualStatus;
+  var actualResult = &#39;&#39;;
+        
+  // Ghi response thực tế vào result
+  if (response.actualResponse) {
+    actualResult = JSON.stringify(response.actualResponse);
+  } else {
+    actualResult = &#39;No response body&#39;;
+  }
+        
+  // Kiểm tra xem kết quả có khớp với expected không (chỉ để log)
+  var isExpectedStatus = (actualStatus == testCase.expectedStatus);
+  if (!isExpectedStatus) {
+    karate.log(&#39;STATUS MISMATCH - Expected: &#39; + testCase.expectedStatus + &#39;, Actual: &#39; + actualStatus);
+  }
+        
+  // Log chi tiết để debug
+  karate.log(&#39;Test Case Data:&#39;, testCase);
+  karate.log(&#39;Expected Status:&#39;, testCase.expectedStatus);
+  karate.log(&#39;Expected Result:&#39;, testCase.expectedResult);
+  karate.log(&#39;Actual Status:&#39;, actualStatus);
+  karate.log(&#39;Is Expected Status:&#39;, isExpectedStatus);
+        
+  karate.log(&#39;Test case #&#39; + (index + 1) + &#39; - Status: &#39; + actualStatus + &#39;, Result: &#39; + actualResult);
+        
+  return {
+    responseStatus: actualStatus,
+    result: actualResult
+  };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Chạy từng test case</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def results = karate.map(testData, runTest)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1558</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65">23:32:31.589 STATUS MISMATCH - Expected: 200, Actual: 401 
+23:32:31.590 Test Case Data: {
+  &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+  &quot;password&quot;: &quot;cityslicka&quot;,
+  &quot;expectedStatus&quot;: 200.0,
+  &quot;expectedResult&quot;: &quot;success&quot;,
+  &quot;testDescription&quot;: &quot;Valid login credentials&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.590 Expected Status: 200.0 
+23:32:31.590 Expected Result: success 
+23:32:31.590 Actual Status: 401 
+23:32:31.590 Is Expected Status: false 
+23:32:31.590 Test case #20 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.587Z&quot;} 
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">580</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.035 Đang chạy test case #1: Valid login credentials 
+23:32:30.052 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">569</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.313 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 45
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;123456&quot;
+}
+
+
+23:32:30.624 response time in milliseconds: 309
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 708
+1 &lt; ETag: W/&quot;2c4-eSfhA7StXGAxgW2Cnt0cOLITu7s&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;access_token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDUyMzU1MCwiZXhwIjoxNzUwNTI3MTUwfQ.I4H6YmeemqlNTynAboocwjwA9L8VQz0n8zv_38WMpJA&quot;,
+  &quot;refresh_token&quot;: &quot;be1a2ea13249eb789b2612fda2b755edcd9ff236da82b48b0b52c3c39e225c67&quot;,
+  &quot;user&quot;: {
+    &quot;id&quot;: &quot;08515b05-2d3e-4789-ad60-db35525a4970&quot;,
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;username&quot;: &quot;nam&quot;,
+    &quot;name&quot;: &quot;nam&quot;,
+    &quot;phoneNumber&quot;: &quot;0123456789&quot;,
+    &quot;profilePic&quot;: &quot;https://res.cloudinary.com/dizcvrefo/image/upload/v1749266646/nestjs_uploads/zk9zrpeidnovxibfqdxr.png&quot;,
+    &quot;bio&quot;: &quot;Chu tich hoi dong Quan tri 1&quot;,
+    &quot;private&quot;: false,
+    &quot;verified&quot;: false,
+    &quot;role&quot;: 0,
+    &quot;followersCount&quot;: 2,
+    &quot;followingCount&quot;: 2,
+    &quot;postCount&quot;: 13
+  }
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.627 [print] Calling login API với email: nam@gmail.com password: 123456 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.628 [print] Response status: 200 body: {
+  &quot;access_token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDUyMzU1MCwiZXhwIjoxNzUwNTI3MTUwfQ.I4H6YmeemqlNTynAboocwjwA9L8VQz0n8zv_38WMpJA&quot;,
+  &quot;refresh_token&quot;: &quot;be1a2ea13249eb789b2612fda2b755edcd9ff236da82b48b0b52c3c39e225c67&quot;,
+  &quot;user&quot;: {
+    &quot;id&quot;: &quot;08515b05-2d3e-4789-ad60-db35525a4970&quot;,
+    &quot;email&quot;: &quot;nam@gmail.com&quot;,
+    &quot;username&quot;: &quot;nam&quot;,
+    &quot;name&quot;: &quot;nam&quot;,
+    &quot;phoneNumber&quot;: &quot;0123456789&quot;,
+    &quot;profilePic&quot;: &quot;https://res.cloudinary.com/dizcvrefo/image/upload/v1749266646/nestjs_uploads/zk9zrpeidnovxibfqdxr.png&quot;,
+    &quot;bio&quot;: &quot;Chu tich hoi dong Quan tri 1&quot;,
+    &quot;private&quot;: false,
+    &quot;verified&quot;: false,
+    &quot;role&quot;: 0,
+    &quot;followersCount&quot;: 2,
+    &quot;followingCount&quot;: 2,
+    &quot;postCount&quot;: 13
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">14</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.641 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;123456&quot;,
+  &quot;expectedStatus&quot;: 200.0,
+  &quot;expectedResult&quot;: &quot;success&quot;,
+  &quot;testDescription&quot;: &quot;Valid login credentials&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.643 Expected Status: 200.0 
+23:32:30.643 Expected Result: success 
+23:32:30.643 Actual Status: 200 
+23:32:30.643 Is Expected Status: true 
+23:32:30.644 Test case #1 - Status: 200, Result: {&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDUyMzU1MCwiZXhwIjoxNzUwNTI3MTUwfQ.I4H6YmeemqlNTynAboocwjwA9L8VQz0n8zv_38WMpJA&quot;,&quot;refresh_token&quot;:&quot;be1a2ea13249eb789b2612fda2b755edcd9ff236da82b48b0b52c3c39e225c67&quot;,&quot;user&quot;:{&quot;id&quot;:&quot;08515b05-2d3e-4789-ad60-db35525a4970&quot;,&quot;email&quot;:&quot;nam@gmail.com&quot;,&quot;username&quot;:&quot;nam&quot;,&quot;name&quot;:&quot;nam&quot;,&quot;phoneNumber&quot;:&quot;0123456789&quot;,&quot;profilePic&quot;:&quot;https://res.cloudinary.com/dizcvrefo/image/upload/v1749266646/nestjs_uploads/zk9zrpeidnovxibfqdxr.png&quot;,&quot;bio&quot;:&quot;Chu tich hoi dong Quan tri 1&quot;,&quot;private&quot;:false,&quot;verified&quot;:false,&quot;role&quot;:0,&quot;followersCount&quot;:2,&quot;followingCount&quot;:2,&quot;postCount&quot;:13}} 
+23:32:30.645 Đang chạy test case #2: Login without password 
+23:32:30.654 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.659 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;&quot;
+}
+
+
+23:32:30.663 response time in milliseconds: 4
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-1Q/uXmHUPCrlC3IaiaK9iiQvI34&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.662Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.665 [print] Calling login API với email: nam@gmail.com password:  
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.665 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.662Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">41</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.667 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Missing password&quot;,
+  &quot;testDescription&quot;: &quot;Login without password&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.667 Expected Status: 400.0 
+23:32:30.667 Expected Result: Missing password 
+23:32:30.667 Actual Status: 400 
+23:32:30.668 Is Expected Status: true 
+23:32:30.668 Test case #2 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.662Z&quot;} 
+23:32:30.669 Đang chạy test case #3: Login with invalid email 
+23:32:30.678 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.681 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;invalid@email.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:30.715 response time in milliseconds: 34
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-Kr7QMaoyox8//YrLJ9VwnyIDnp0&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.713Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.717 [print] Calling login API với email: invalid@email.com password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.717 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.713Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">9</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.720 STATUS MISMATCH - Expected: 400, Actual: 401 
+23:32:30.721 Test Case Data: {
+  &quot;email&quot;: &quot;invalid@email.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;user not found&quot;,
+  &quot;testDescription&quot;: &quot;Login with invalid email&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.721 Expected Status: 400.0 
+23:32:30.721 Expected Result: user not found 
+23:32:30.721 Actual Status: 401 
+23:32:30.721 Is Expected Status: false 
+23:32:30.721 Test case #3 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.713Z&quot;} 
+23:32:30.721 Đang chạy test case #4: Login without email 
+23:32:30.729 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.731 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:30.736 response time in milliseconds: 4
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-Vik1EFw4t97FIz7gsE4FGEpX+uk&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.734Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.737 [print] Calling login API với email:  password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.737 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.734Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">92</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.738 Test Case Data: {
+  &quot;email&quot;: &quot;&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Missing email or username&quot;,
+  &quot;testDescription&quot;: &quot;Login without email&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.738 Expected Status: 400.0 
+23:32:30.738 Expected Result: Missing email or username 
+23:32:30.739 Actual Status: 400 
+23:32:30.739 Is Expected Status: true 
+23:32:30.739 Test case #4 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.734Z&quot;} 
+23:32:30.739 Đang chạy test case #5: Login with wrong password 
+23:32:30.745 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">88</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.748 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 52
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;wrongpassword&quot;
+}
+
+
+23:32:30.834 response time in milliseconds: 86
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-Xxr2TNhYMTJZxQnt7FNt6e223TY&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.833Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.835 [print] Calling login API với email: nam@gmail.com password: wrongpassword 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.836 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.833Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">11</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.837 STATUS MISMATCH - Expected: 400, Actual: 401 
+23:32:30.837 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;wrongpassword&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;user not found&quot;,
+  &quot;testDescription&quot;: &quot;Login with wrong password&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.837 Expected Status: 400.0 
+23:32:30.837 Expected Result: user not found 
+23:32:30.837 Actual Status: 401 
+23:32:30.838 Is Expected Status: false 
+23:32:30.838 Test case #5 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.833Z&quot;} 
+23:32:30.838 Đang chạy test case #6: TC: Email không hợp lệ - thiếu domain 
+23:32:30.844 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.846 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;user@&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:30.851 response time in milliseconds: 5
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-DAnr4XRHHiNTALm4PwK0W1wNmgs&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.850Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.854 [print] Calling login API với email: user@ password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.855 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.850Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">21</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.855 Test Case Data: {
+  &quot;email&quot;: &quot;user@&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid email format&quot;,
+  &quot;testDescription&quot;: &quot;TC: Email không hợp lệ - thiếu domain&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.857 Expected Status: 400.0 
+23:32:30.857 Expected Result: Invalid email format 
+23:32:30.857 Actual Status: 400 
+23:32:30.857 Is Expected Status: true 
+23:32:30.857 Test case #6 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.850Z&quot;} 
+23:32:30.858 Đang chạy test case #7: TC: Email không hợp lệ - thiếu ký tự @ 
+23:32:30.868 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.874 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;user.example.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:30.882 response time in milliseconds: 8
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-jZ/RJXGbFqt073YX1uQMvVPzyI4&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.880Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.887 [print] Calling login API với email: user.example.com password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.888 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.880Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">14</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.889 Test Case Data: {
+  &quot;email&quot;: &quot;user.example.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid email format&quot;,
+  &quot;testDescription&quot;: &quot;TC: Email không hợp lệ - thiếu ký tự @&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.890 Expected Status: 400.0 
+23:32:30.890 Expected Result: Invalid email format 
+23:32:30.890 Actual Status: 400 
+23:32:30.890 Is Expected Status: true 
+23:32:30.890 Test case #7 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.880Z&quot;} 
+23:32:30.891 Đang chạy test case #8: TC: Email không hợp lệ - thiếu phần username 
+23:32:30.899 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.903 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 49
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;@example.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:30.909 response time in milliseconds: 5
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-t6eROvwCYI+BeVk4gSFROnOb7wc&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.907Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:30.911 [print] Calling login API với email: @example.com password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:30.913 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:30.907Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">92</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:30.914 Test Case Data: {
+  &quot;email&quot;: &quot;@example.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid email format&quot;,
+  &quot;testDescription&quot;: &quot;TC: Email không hợp lệ - thiếu phần username&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:30.914 Expected Status: 400.0 
+23:32:30.914 Expected Result: Invalid email format 
+23:32:30.914 Actual Status: 400 
+23:32:30.914 Is Expected Status: true 
+23:32:30.914 Test case #8 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:30.907Z&quot;} 
+23:32:30.915 Đang chạy test case #9: TC: Password quá ngắn 
+23:32:30.922 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:30.924 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 41
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;12&quot;
+}
+
+
+23:32:31.011 response time in milliseconds: 86
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-NotOmc/OYnLeWTAZkpj2MYmLYOo&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:30 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.010Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.012 [print] Calling login API với email: nam@gmail.com password: 12 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.012 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.010Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">93</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.014 STATUS MISMATCH - Expected: 400, Actual: 401 
+23:32:31.014 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;12&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Password must be between X and Y characters&quot;,
+  &quot;testDescription&quot;: &quot;TC: Password quá ngắn&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.014 Expected Status: 400.0 
+23:32:31.014 Expected Result: Password must be between X and Y characters 
+23:32:31.014 Actual Status: 401 
+23:32:31.014 Is Expected Status: false 
+23:32:31.014 Test case #9 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.010Z&quot;} 
+23:32:31.015 Đang chạy test case #10: TC: Password quá dài 
+23:32:31.019 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">90</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.021 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 141
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;verylongpasswordthatexceedsthenormallimitsforpasswordlengthvalidationwhichshouldnotbeaccepted123456789&quot;
+}
+
+
+23:32:31.109 response time in milliseconds: 87
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-2b1xnOXZIfCqk5iSYkXeE7d03Ks&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.107Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.112 [print] Calling login API với email: nam@gmail.com password: verylongpasswordthatexceedsthenormallimitsforpasswordlengthvalidationwhichshouldnotbeaccepted123456789 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.112 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.107Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">10</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.112 STATUS MISMATCH - Expected: 400, Actual: 401 
+23:32:31.113 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;verylongpasswordthatexceedsthenormallimitsforpasswordlengthvalidationwhichshouldnotbeaccepted123456789&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Password must be between X and Y characters&quot;,
+  &quot;testDescription&quot;: &quot;TC: Password quá dài&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.113 Expected Status: 400.0 
+23:32:31.113 Expected Result: Password must be between X and Y characters 
+23:32:31.113 Actual Status: 401 
+23:32:31.113 Is Expected Status: false 
+23:32:31.113 Test case #10 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.107Z&quot;} 
+23:32:31.114 Đang chạy test case #11: TC: SQL Injection trong email 
+23:32:31.120 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.123 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 48
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:31.128 response time in milliseconds: 4
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-sfLUDer8vK0PzdMetMzBUT6ypHw&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.126Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.129 [print] Calling login API với email: &#39; OR &#39;1&#39;=&#39;1 password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.129 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.126Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">96</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.130 Test Case Data: {
+  &quot;email&quot;: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+  &quot;testDescription&quot;: &quot;TC: SQL Injection trong email&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.131 Expected Status: 400.0 
+23:32:31.131 Expected Result: Invalid input 
+23:32:31.131 Actual Status: 400 
+23:32:31.131 Is Expected Status: true 
+23:32:31.131 Test case #11 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.126Z&quot;} 
+23:32:31.132 Đang chạy test case #12: TC: SQL Injection trong password 
+23:32:31.137 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">93</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.139 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 50
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;
+}
+
+
+23:32:31.231 response time in milliseconds: 92
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-cFmyeVAKRvhJGC1y47jKHGtsXAk&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.230Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.232 [print] Calling login API với email: nam@gmail.com password: &#39; OR &#39;1&#39;=&#39;1 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.233 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.230Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">7</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.233 STATUS MISMATCH - Expected: 400, Actual: 401 
+23:32:31.234 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;&#39; OR &#39;1&#39;=&#39;1&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+  &quot;testDescription&quot;: &quot;TC: SQL Injection trong password&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.234 Expected Status: 400.0 
+23:32:31.234 Expected Result: Invalid input 
+23:32:31.234 Actual Status: 401 
+23:32:31.234 Is Expected Status: false 
+23:32:31.235 Test case #12 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.230Z&quot;} 
+23:32:31.236 Đang chạy test case #13: TC: XSS trong email 
+23:32:31.241 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.244 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 78
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;&lt;script&gt;alert(\&quot;xss\&quot;)&lt;/script&gt;@test.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;
+}
+
+
+23:32:31.247 response time in milliseconds: 2
+1 &lt; 400
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 136
+1 &lt; ETag: W/&quot;88-vwcd/86lKmMn6L2fKAZR4Uy1OFY&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.246Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.248 [print] Calling login API với email: &lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt;@test.com password: password123 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.248 [print] Response status: 400 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 400,
+  &quot;message&quot;: &quot;Dữ liệu không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.246Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">89</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.248 Test Case Data: {
+  &quot;email&quot;: &quot;&lt;script&gt;alert(\&quot;xss\&quot;)&lt;/script&gt;@test.com&quot;,
+  &quot;password&quot;: &quot;password123&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+  &quot;testDescription&quot;: &quot;TC: XSS trong email&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.249 Expected Status: 400.0 
+23:32:31.249 Expected Result: Invalid input 
+23:32:31.249 Actual Status: 400 
+23:32:31.249 Is Expected Status: true 
+23:32:31.249 Test case #13 - Status: 400, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:400,&quot;message&quot;:&quot;Dữ liệu không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.246Z&quot;} 
+23:32:31.249 Đang chạy test case #14: TC: XSS trong password 
+23:32:31.254 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">87</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.255 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 71
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;&lt;script&gt;alert(\&quot;xss\&quot;)&lt;/script&gt;&quot;
+}
+
+
+23:32:31.341 response time in milliseconds: 86
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-10ru/XRKA7zRQA/EufmWjtT4hE4&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.340Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.342 [print] Calling login API với email: nam@gmail.com password: &lt;script&gt;alert(&quot;xss&quot;)&lt;/script&gt; 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.342 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.340Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">36</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.344 STATUS MISMATCH - Expected: 400, Actual: 401 
+23:32:31.344 Test Case Data: {
+  &quot;email&quot;: &quot;nam@gmail.com&quot;,
+  &quot;password&quot;: &quot;&lt;script&gt;alert(\&quot;xss\&quot;)&lt;/script&gt;&quot;,
+  &quot;expectedStatus&quot;: 400.0,
+  &quot;expectedResult&quot;: &quot;Invalid input&quot;,
+  &quot;testDescription&quot;: &quot;TC: XSS trong password&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.344 Expected Status: 400.0 
+23:32:31.344 Expected Result: Invalid input 
+23:32:31.344 Actual Status: 401 
+23:32:31.344 Is Expected Status: false 
+23:32:31.344 Test case #14 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.340Z&quot;} 
+23:32:31.344 Đang chạy test case #15: TC: Vượt quá số lần thử - lần 1 
+23:32:31.348 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.351 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass1&quot;
+}
+
+
+23:32:31.383 response time in milliseconds: 30
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-CE6V2a64xRU1LQ9aM6gHDyWFjFg&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.382Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.384 [print] Calling login API với email: brute.force@test.com password: wrongpass1 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.384 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.382Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">39</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.385 STATUS MISMATCH - Expected: 429, Actual: 401 
+23:32:31.385 Test Case Data: {
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass1&quot;,
+  &quot;expectedStatus&quot;: 429.0,
+  &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+  &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 1&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.385 Expected Status: 429.0 
+23:32:31.385 Expected Result: Too many login attempts 
+23:32:31.385 Actual Status: 401 
+23:32:31.385 Is Expected Status: false 
+23:32:31.385 Test case #15 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.382Z&quot;} 
+23:32:31.385 Đang chạy test case #16: TC: Vượt quá số lần thử - lần 2 
+23:32:31.389 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.391 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass2&quot;
+}
+
+
+23:32:31.427 response time in milliseconds: 36
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-JtAybJhqw86dzxdMGOGEMn0IX+w&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.426Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.428 [print] Calling login API với email: brute.force@test.com password: wrongpass2 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.428 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.426Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">36</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.429 STATUS MISMATCH - Expected: 429, Actual: 401 
+23:32:31.429 Test Case Data: {
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass2&quot;,
+  &quot;expectedStatus&quot;: 429.0,
+  &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+  &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 2&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.429 Expected Status: 429.0 
+23:32:31.429 Expected Result: Too many login attempts 
+23:32:31.429 Actual Status: 401 
+23:32:31.429 Is Expected Status: false 
+23:32:31.429 Test case #16 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.426Z&quot;} 
+23:32:31.430 Đang chạy test case #17: TC: Vượt quá số lần thử - lần 3 
+23:32:31.434 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.437 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass3&quot;
+}
+
+
+23:32:31.467 response time in milliseconds: 30
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-G3y4JIfla9LD8Gv/CXMtMS25Xc0&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.467Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.468 [print] Calling login API với email: brute.force@test.com password: wrongpass3 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.468 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.467Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">35</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.469 STATUS MISMATCH - Expected: 429, Actual: 401 
+23:32:31.469 Test Case Data: {
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass3&quot;,
+  &quot;expectedStatus&quot;: 429.0,
+  &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+  &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 3&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.469 Expected Status: 429.0 
+23:32:31.469 Expected Result: Too many login attempts 
+23:32:31.469 Actual Status: 401 
+23:32:31.469 Is Expected Status: false 
+23:32:31.469 Test case #17 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.467Z&quot;} 
+23:32:31.470 Đang chạy test case #18: TC: Vượt quá số lần thử - lần 4 
+23:32:31.474 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.475 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass4&quot;
+}
+
+
+23:32:31.508 response time in milliseconds: 31
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-ue9WLlZljl0PFESqkihNPVK+/Jg&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.506Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.509 [print] Calling login API với email: brute.force@test.com password: wrongpass4 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.509 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.506Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">34</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.509 STATUS MISMATCH - Expected: 429, Actual: 401 
+23:32:31.509 Test Case Data: {
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass4&quot;,
+  &quot;expectedStatus&quot;: 429.0,
+  &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+  &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 4&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.510 Expected Status: 429.0 
+23:32:31.510 Expected Result: Too many login attempts 
+23:32:31.510 Actual Status: 401 
+23:32:31.510 Is Expected Status: false 
+23:32:31.510 Test case #18 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.506Z&quot;} 
+23:32:31.510 Đang chạy test case #19: TC: Vượt quá số lần thử - lần 5 
+23:32:31.514 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.516 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass5&quot;
+}
+
+
+23:32:31.547 response time in milliseconds: 30
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-1khKpErOfeM0St/PbTvEID3fxC4&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.546Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.548 [print] Calling login API với email: brute.force@test.com password: wrongpass5 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.549 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.546Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.65.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.login-single-call</div>
+      </div>
+      <div class="time-cell passed">36</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.4">23:32:31.549 STATUS MISMATCH - Expected: 429, Actual: 401 
+23:32:31.549 Test Case Data: {
+  &quot;email&quot;: &quot;brute.force@test.com&quot;,
+  &quot;password&quot;: &quot;wrongpass5&quot;,
+  &quot;expectedStatus&quot;: 429.0,
+  &quot;expectedResult&quot;: &quot;Too many login attempts&quot;,
+  &quot;testDescription&quot;: &quot;TC: Vượt quá số lần thử - lần 5&quot;,
+  &quot;responseStatus&quot;: &quot;&quot;,
+  &quot;result&quot;: &quot;&quot;
+}
+ 
+23:32:31.549 Expected Status: 429.0 
+23:32:31.549 Expected Result: Too many login attempts 
+23:32:31.549 Actual Status: 401 
+23:32:31.549 Is Expected Status: false 
+23:32:31.549 Test case #19 - Status: 401, Result: {&quot;success&quot;:false,&quot;statusCode&quot;:401,&quot;message&quot;:&quot;Thông tin đăng nhập không hợp lệ&quot;,&quot;path&quot;:&quot;/auth/login&quot;,&quot;timestamp&quot;:&quot;2025-06-21T16:32:31.546Z&quot;} 
+23:32:31.549 Đang chạy test case #20: Valid login credentials 
+23:32:31.553 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { email: &#39;#(email)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.7">23:32:31.555 request:
+1 &gt; POST http://localhost:3000/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;email&quot;: &quot;eve.holt@reqres.in&quot;,
+  &quot;password&quot;: &quot;cityslicka&quot;
+}
+
+
+23:32:31.587 response time in milliseconds: 32
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 149
+1 &lt; ETag: W/&quot;95-U62QU6ex2Zu8c2OV5nG+s7uZAr8&quot;
+1 &lt; Date: Sat, 21 Jun 2025 16:32:31 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.587Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling login API với email:&#39;, email, &#39;password:&#39;, password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.10">23:32:31.588 [print] Calling login API với email: eve.holt@reqres.in password: cityslicka 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.65.0.call">
+    <div class="step-container" id="0.65.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65.0.call.0.11">23:32:31.589 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Thông tin đăng nhập không hợp lệ&quot;,
+  &quot;path&quot;: &quot;/auth/login&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-21T16:32:31.587Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testResults = results</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Hoàn thành tất cả test cases. Đang ghi kết quả vào Excel...&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.67">23:32:31.592 [print] Hoàn thành tất cả test cases. Đang ghi kết quả vào Excel... 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ghi kết quả vào Excel</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">470</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (writeSuccess) karate.log(&#39;Đã ghi kết quả vào Excel thành công!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.71">23:32:32.063 Đã ghi kết quả vào Excel thành công! 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!writeSuccess) karate.log(&#39;Lỗi khi ghi kết quả vào Excel!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
