@@ -35,7 +35,7 @@ function(filePath, sheetName) {
         var headers = [
             'bearerToken', 'oldPassword', 'newPassword',
             'expectedStatus', 'expectedResult', 'testDescription',
-            'responseStatus', 'result'
+            'responseStatus', 'result', 'testStatus', 'failureReason'
         ];
 
         for (var i = 0; i < headers.length; i++) {

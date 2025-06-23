@@ -419,6 +419,8 @@ bearerToken: 'TOKEN_MỚI_CỦA_BẠN'
 | `testDescription` | Mô tả test case | `TC1: Đổi mật khẩu hợp lệ` |
 | `responseStatus` | Status thực tế (auto-fill) | `200` |
 | `result` | Response thực tế (auto-fill) | `{"message": "..."}` |
+| `testStatus` | Kết quả test (auto-fill) | `PASS` hoặc `FAIL` |
+| `failureReason` | Lý do fail (auto-fill) | `Status mismatch: Expected 200, got 401` |
 
 ### Sheet "like"
 | Column | Mô tả | Ví dụ |
