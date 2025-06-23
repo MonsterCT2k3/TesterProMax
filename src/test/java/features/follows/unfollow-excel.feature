@@ -14,6 +14,26 @@ Feature: Unfollow Testing từ Excel - Sheet unfollow
     * print 'Sử dụng global bearer token từ config:', globalBearerToken
 
   Scenario: Chạy tất cả test cases unfollow từ Excel
+    * def evaluateTestCase = 
+      """
+      function(testCase, actualStatus, actualResponse) {
+        var expectedStatus = testCase.expectedStatus;
+        
+        // Kiểm tra Status Code (Bắt buộc)
+        if (actualStatus != expectedStatus) {
+          return {
+            status: 'FAIL',
+            reason: 'Status mismatch: Expected ' + expectedStatus + ', got ' + actualStatus
+          };
+        }
+        
+        return {
+          status: 'PASS',
+          reason: 'All validations passed'
+        };
+      }
+      """
+
     * def runTest = 
       """
       function(testCase, index) {
@@ -59,29 +79,39 @@ Feature: Unfollow Testing từ Excel - Sheet unfollow
             actualResult = 'No response body';
           }
           
-          // Kiểm tra xem kết quả có khớp với expected không (chỉ để log)
-          var isExpectedStatus = (actualStatus == testCase.expectedStatus);
-          if (!isExpectedStatus) {
-            karate.log('STATUS MISMATCH - Expected: ' + testCase.expectedStatus + ', Actual: ' + actualStatus);
+          // ===== ĐÁNH GIÁ PASS/FAIL =====
+          var testEvaluation = evaluateTestCase(testCase, actualStatus, response.actualResponse);
+          
+          // Log kết quả đánh giá
+          if (testEvaluation.status === 'FAIL') {
+            karate.log('❌ TEST FAILED - ' + testEvaluation.reason);
+          } else {
+            karate.log('✅ TEST PASSED - ' + testEvaluation.reason);
           }
           
           // Log chi tiết để debug
           karate.log('Test Case Data:', testCase);
           karate.log('Expected Status:', testCase.expectedStatus);
+          karate.log('Expected Result:', testCase.expectedResult);
           karate.log('Actual Status:', actualStatus);
+          karate.log('Test Status:', testEvaluation.status);
           
-          karate.log('Test case #' + (index + 1) + ' - Status: ' + actualStatus + ', Result: ' + actualResult);
+          karate.log('Test case #' + (index + 1) + ' - Status: ' + actualStatus + ', Test Result: ' + testEvaluation.status);
           
           return {
             responseStatus: actualStatus,
-            result: actualResult
+            result: actualResult,
+            testStatus: testEvaluation.status,
+            failureReason: testEvaluation.reason
           };
         } catch (e) {
           // Xử lý lỗi (ví dụ URISyntaxException cho SQL injection test)
           karate.log('Test case #' + (index + 1) + ' gặp lỗi:', e.message);
           return {
             responseStatus: 'ERROR',
-            result: 'Exception: ' + e.message
+            result: 'Exception: ' + e.message,
+            testStatus: 'FAIL',
+            failureReason: 'Exception: ' + e.message
           };
         }
       }
@@ -91,6 +121,26 @@ Feature: Unfollow Testing từ Excel - Sheet unfollow
     * def results = karate.map(testData, runTest)
     * def testResults = results
     * print 'Hoàn thành tất cả test cases unfollow. Đang ghi kết quả vào Excel...'
+    
+    # ===== THỐNG KÊ TEST RESULTS =====
+    * def passedTests = karate.filter(testResults, function(item) { return item.testStatus === 'PASS'; })
+    * def failedTests = karate.filter(testResults, function(item) { return item.testStatus === 'FAIL'; })
+    * def totalTests = testResults.length
+    * def passedCount = passedTests.length  
+    * def failedCount = failedTests.length
+    * def successRate = passedCount / totalTests * 100
+    
+    # Log thống kê
+    * print '========================================'
+    * print '📊 THỐNG KÊ KẾT QUẢ TEST UNFOLLOW:'
+    * print '📁 Tổng số test cases: ' + totalTests
+    * print '✅ Số test PASSED: ' + passedCount  
+    * print '❌ Số test FAILED: ' + failedCount
+    * print '📈 Tỷ lệ thành công: ' + successRate.toFixed(2) + '%'
+    * print '========================================'
+    
+    # Log failed tests
+    * if (failedTests.length > 0) karate.forEach(failedTests, function(test, index) { karate.log('❌ Failed test #' + (index + 1) + ': ' + test.failureReason); })
     
     * print 'Ghi kết quả vào Excel...'
     * def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)

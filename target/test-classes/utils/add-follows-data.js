@@ -18,9 +18,9 @@ function fn(excelFilePath, sheetName) {
         // Tạo sheet mới
         var sheet = workbook.createSheet(sheetName);
 
-        // Tạo header
+        // Tạo header với testStatus và failureReason
         var headerRow = sheet.createRow(0);
-        var headers = ['testDescription', 'followingId', 'bearerToken', 'expectedStatus', 'expectedResult'];
+        var headers = ['testDescription', 'followingId', 'bearerToken', 'expectedStatus', 'expectedResult', 'responseStatus', 'result', 'testStatus', 'failureReason'];
         for (var i = 0; i < headers.length; i++) {
             headerRow.createCell(i).setCellValue(headers[i]);
         }
@@ -35,15 +35,15 @@ function fn(excelFilePath, sheetName) {
                 expectedStatus: 200,
                 expectedResult: '{"message": "Followed successfully"}'
             },
-            // TC2: Thiếu trường followingId
+            // TC2: Thiếu trường followingId (null/undefined)
             {
                 testDescription: 'Thiếu trường followingId',
-                followingId: '',
+                followingId: 'NULL_VALUE',
                 bearerToken: '',
                 expectedStatus: 400,
                 expectedResult: '{"error": "followingId is required"}'
             },
-            // TC3: followingId rỗng
+            // TC3: followingId rỗng (empty string)
             {
                 testDescription: 'followingId rỗng',
                 followingId: '',
@@ -139,13 +139,13 @@ function fn(excelFilePath, sheetName) {
                 expectedStatus: 415,
                 expectedResult: '{"error": "Unsupported Media Type"}'
             },
-            // TC16: Kiểm tra trường null
+            // TC16: Kiểm tra trường null (duplicate removed - moved to TC2)
             {
-                testDescription: 'Kiểm tra trường null',
-                followingId: 'NULL_VALUE',
+                testDescription: 'followingId có ký tự đặc biệt',
+                followingId: 'user@#$%',
                 bearerToken: '',
                 expectedStatus: 400,
-                expectedResult: '{"error": "followingId cannot be null"}'
+                expectedResult: '{"error": "Invalid followingId format"}'
             },
             // TC17: Kiểm tra độ dài followingId
             {
@@ -173,6 +173,10 @@ function fn(excelFilePath, sheetName) {
             row.createCell(2).setCellValue(testData[i].bearerToken);
             row.createCell(3).setCellValue(testData[i].expectedStatus);
             row.createCell(4).setCellValue(testData[i].expectedResult);
+            row.createCell(5).setCellValue(''); // responseStatus - sẽ được điền sau
+            row.createCell(6).setCellValue(''); // result - sẽ được điền sau
+            row.createCell(7).setCellValue(''); // testStatus - sẽ được điền sau
+            row.createCell(8).setCellValue(''); // failureReason - sẽ được điền sau
         }
 
         // Lưu workbook

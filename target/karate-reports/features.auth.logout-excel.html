@@ -1,0 +1,2108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1245f8e7-00df-42f1-8e20-4795f4abad9e",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.auth.logout-excel</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-23 06:01:55 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:16]"><span>[1:16]</span> <span>Chạy tất cả test cases logout từ Excel</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/auth/logout-excel.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Logout Testing từ Excel - Sheet logout</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:16]</span>
+                <span class="scenario-name">Chạy tất cả test cases logout từ Excel</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1600</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:01:54.331 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">18:01:54.368 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def readExcel = read(&#39;classpath:utils/read-excel.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def writeToExcel = read(&#39;classpath:utils/write-excel.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def excelFilePath = &#39;src/test/java/data/data.xlsx&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sheetName = &#39;logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testData = readExcel(excelFilePath, sheetName)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">683</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">18:01:55.080 Headers found: [
+  &quot;bearerToken&quot;,
+  &quot;expectedStatus&quot;,
+  &quot;expectedResult&quot;,
+  &quot;testDescription&quot;,
+  &quot;responseStatus&quot;,
+  &quot;result&quot;,
+  &quot;testStatus&quot;,
+  &quot;failureReason&quot;
+]
+ 
+18:01:55.105 Read data from Excel: [
+  {
+    &quot;bearerToken&quot;: &quot;&quot;,
+    &quot;expectedStatus&quot;: &quot;200&quot;,
+    &quot;expectedResult&quot;: &quot;{\&quot;message\&quot;: \&quot;Logged out successfully\&quot;}&quot;,
+    &quot;testDescription&quot;: &quot;TC1: Đăng xuất thành công với token hợp lệ&quot;,
+    &quot;responseStatus&quot;: &quot;401&quot;,
+    &quot;result&quot;: &quot;{\&quot;success\&quot;:false,\&quot;statusCode\&quot;:401,\&quot;message\&quot;:\&quot;Unauthorized\&quot;,\&quot;path\&quot;:\&quot;/auth/logout\&quot;,\&quot;timestamp\&quot;:\&quot;2025-06-23T09:33:38.230Z\&quot;}&quot;,
+    &quot;testStatus&quot;: &quot;FAIL&quot;,
+    &quot;failureReason&quot;: &quot;Status mismatch: Expected 200, got 401&quot;
+  },
+  {
+    &quot;bearerToken&quot;: &quot;NO_TOKEN&quot;,
+    &quot;expectedStatus&quot;: &quot;401&quot;,
+    &quot;expectedResult&quot;: &quot;{\&quot;error\&quot;: \&quot;Unauthorized\&quot;}&quot;,
+    &quot;testDescription&quot;: &quot;TC2: Đăng xuất thất bại - Không truyền bearer token&quot;,
+    &quot;responseStatus&quot;: &quot;401&quot;,
+    &quot;result&quot;: &quot;{\&quot;success\&quot;:false,\&quot;statusCode\&quot;:401,\&quot;message\&quot;:\&quot;Unauthorized\&quot;,\&quot;path\&quot;:\&quot;/auth/logout\&quot;,\&quot;timestamp\&quot;:\&quot;2025-06-23T09:33:38.312Z\&quot;}&quot;,
+    &quot;testStatus&quot;: &quot;PASS&quot;,
+    &quot;failureReason&quot;: &quot;All validations passed&quot;
+  },
+  {
+    &quot;bearerToken&quot;: &quot;invalid_token_12345&quot;,
+    &quot;expectedStatus&quot;: &quot;401&quot;,
+    &quot;expectedResult&quot;: &quot;{\&quot;error\&quot;: \&quot;Invalid or expired token\&quot;}&quot;,
+    &quot;testDescription&quot;: &quot;TC3: Đăng xuất thất bại - Bearer token không hợp lệ&quot;,
+    &quot;responseStatus&quot;: &quot;401&quot;,
+    &quot;result&quot;: &quot;{\&quot;success\&quot;:false,\&quot;statusCode\&quot;:401,\&quot;message\&quot;:\&quot;Unauthorized\&quot;,\&quot;path\&quot;:\&quot;/auth/logout\&quot;,\&quot;timestamp\&quot;:\&quot;2025-06-23T09:33:38.344Z\&quot;}&quot;,
+    &quot;testStatus&quot;: &quot;PASS&quot;,
+    &quot;failureReason&quot;: &quot;All validations passed&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Đọc được &#39; + testData.length + &#39; test cases từ Excel sheet: &#39; + sheetName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">18:01:55.113 [print] Đọc được 3 test cases từ Excel sheet: logout 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testResults = []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def globalBearerToken = config.bearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Sử dụng global bearer token từ config:&#39;, globalBearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">18:01:55.131 [print] Sử dụng global bearer token từ config: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDY3NjI4MiwiZXhwIjoxNzUwNjc5ODgyfQ.eQgi0lA3OvlYrn9TluUTgvJwrbrbQcO2XI61Wq_JoOA 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def evaluateTestCase =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.17">function(testCase, actualStatus, actualResponse) {
+  var expectedStatus = testCase.expectedStatus;
+        
+  // Kiểm tra Status Code (Bắt buộc)
+  if (actualStatus != expectedStatus) {
+    return {
+      status: &#39;FAIL&#39;,
+      reason: &#39;Status mismatch: Expected &#39; + expectedStatus + &#39;, got &#39; + actualStatus
+    };
+  }
+        
+  // Kiểm tra thêm nếu có expectedResult
+  if (testCase.expectedResult &amp;&amp; testCase.expectedResult.trim() !== &#39;&#39;) {
+    try {
+      var expectedObj = JSON.parse(testCase.expectedResult);
+            
+      // Kiểm tra success response
+      if (expectedStatus == 200 || expectedStatus == 201) {
+        if (expectedObj.message &amp;&amp; !actualResponse.message) {
+          return {
+            status: &#39;FAIL&#39;,
+            reason: &#39;Missing message in success response&#39;
+          };
+        }
+      }
+            
+      // Kiểm tra error response
+      if (expectedStatus &gt;= 400) {
+        if (expectedObj.error &amp;&amp; !actualResponse.error &amp;&amp; !actualResponse.message) {
+          return {
+            status: &#39;FAIL&#39;,
+            reason: &#39;Missing error message in error response&#39;
+          };
+        }
+      }
+    } catch (e) {
+      karate.log(&#39;Could not parse expectedResult as JSON, skipping detailed validation&#39;);
+    }
+  }
+        
+  return {
+    status: &#39;PASS&#39;,
+    reason: &#39;All validations passed&#39;
+  };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def runTest =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.66">function(testCase, index) {
+  karate.log(&#39;Đang chạy test case #&#39; + (index + 1) + &#39;: &#39; + testCase.testDescription);
+        
+  var bearerToken = &#39;&#39;;
+        
+  // Sử dụng bearer token từ test case hoặc global config
+  if (testCase.bearerToken &amp;&amp; testCase.bearerToken.trim() !== &#39;&#39;) {
+    if (testCase.bearerToken === &#39;NO_TOKEN&#39;) {
+      // TC2: Không có token
+      bearerToken = &#39;&#39;;
+      karate.log(&#39;Test case không sử dụng token&#39;);
+    } else {
+      // Sử dụng token từ Excel nếu có
+      bearerToken = testCase.bearerToken;
+      karate.log(&#39;Sử dụng bearer token từ Excel:&#39;, bearerToken);
+    }
+  } else {
+    // Sử dụng global token từ config
+    bearerToken = globalBearerToken;
+    karate.log(&#39;Sử dụng global bearer token từ config:&#39;, bearerToken);
+  }
+        
+  // Gọi API logout
+  var response = karate.call(&#39;classpath:features/helpers/logout-single-call.feature&#39;, {
+    bearerToken: bearerToken
+  });
+        
+  var actualStatus = response.actualStatus;
+  var actualResult = &#39;&#39;;
+        
+  // Ghi response thực tế vào result
+  if (response.actualResponse) {
+    actualResult = JSON.stringify(response.actualResponse);
+  } else {
+    actualResult = &#39;No response body&#39;;
+  }
+        
+  // ===== ĐÁNH GIÁ PASS/FAIL =====
+  var testEvaluation = evaluateTestCase(testCase, actualStatus, response.actualResponse);
+        
+  // Log kết quả đánh giá
+  if (testEvaluation.status === &#39;FAIL&#39;) {
+    karate.log(&#39;❌ TEST FAILED - &#39; + testEvaluation.reason);
+  } else {
+    karate.log(&#39;✅ TEST PASSED - &#39; + testEvaluation.reason);
+  }
+        
+  // Log chi tiết để debug
+  karate.log(&#39;Test Case Data:&#39;, testCase);
+  karate.log(&#39;Expected Status:&#39;, testCase.expectedStatus);
+  karate.log(&#39;Expected Result:&#39;, testCase.expectedResult);
+  karate.log(&#39;Actual Status:&#39;, actualStatus);
+  karate.log(&#39;Test Status:&#39;, testEvaluation.status);
+        
+  karate.log(&#39;Test case #&#39; + (index + 1) + &#39; - Status: &#39; + actualStatus + &#39;, Test Result: &#39; + testEvaluation.status);
+        
+  return {
+    responseStatus: actualStatus,
+    result: actualResult,
+    testStatus: testEvaluation.status,
+    failureReason: testEvaluation.reason
+  };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Bắt đầu chạy từng test case...&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.133">18:01:55.146 [print] Bắt đầu chạy từng test case... 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def results = karate.map(testData, runTest)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">537</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134">18:01:55.682 ✅ TEST PASSED - All validations passed 
+18:01:55.682 Test Case Data: {
+  &quot;bearerToken&quot;: &quot;invalid_token_12345&quot;,
+  &quot;expectedStatus&quot;: &quot;401&quot;,
+  &quot;expectedResult&quot;: &quot;{\&quot;error\&quot;: \&quot;Invalid or expired token\&quot;}&quot;,
+  &quot;testDescription&quot;: &quot;TC3: Đăng xuất thất bại - Bearer token không hợp lệ&quot;,
+  &quot;responseStatus&quot;: &quot;401&quot;,
+  &quot;result&quot;: &quot;{\&quot;success\&quot;:false,\&quot;statusCode\&quot;:401,\&quot;message\&quot;:\&quot;Unauthorized\&quot;,\&quot;path\&quot;:\&quot;/auth/logout\&quot;,\&quot;timestamp\&quot;:\&quot;2025-06-23T09:33:38.344Z\&quot;}&quot;,
+  &quot;testStatus&quot;: &quot;PASS&quot;,
+  &quot;failureReason&quot;: &quot;All validations passed&quot;
+}
+ 
+18:01:55.682 Expected Status: 401 
+18:01:55.682 Expected Result: {&quot;error&quot;: &quot;Invalid or expired token&quot;} 
+18:01:55.682 Actual Status: 401 
+18:01:55.682 Test Status: PASS 
+18:01:55.683 Test case #3 - Status: 401, Test Result: PASS 
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.134.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.logout-single-call</div>
+      </div>
+      <div class="time-cell passed">427</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.4">18:01:55.149 Đang chạy test case #1: TC1: Đăng xuất thành công với token hợp lệ 
+18:01:55.149 Sử dụng global bearer token từ config: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDY3NjI4MiwiZXhwIjoxNzUwNjc5ODgyfQ.eQgi0lA3OvlYrn9TluUTgvJwrbrbQcO2XI61Wq_JoOA 
+18:01:55.166 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Thêm header Authorization nếu có bearer token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (bearerToken &amp;&amp; bearerToken.trim() !== &#39;&#39;) karate.set(&#39;Authorization&#39;, &#39;Bearer &#39; + bearerToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(Authorization)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">411</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.11">18:01:55.394 request:
+1 &gt; POST http://localhost:3000/auth/logout
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDY3NjI4MiwiZXhwIjoxNzUwNjc5ODgyfQ.eQgi0lA3OvlYrn9TluUTgvJwrbrbQcO2XI61Wq_JoOA
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:01:55.587 response time in milliseconds: 189
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 40
+1 &lt; ETag: W/&quot;28-EeSMzLVUdT/4VxlKxnso6IW6jTg&quot;
+1 &lt; Date: Mon, 23 Jun 2025 11:01:55 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;message&quot;: &quot;Đăng xuất thành công&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling logout API với bearerToken:&#39;, bearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.14">18:01:55.590 [print] Calling logout API với bearerToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDY3NjI4MiwiZXhwIjoxNzUwNjc5ODgyfQ.eQgi0lA3OvlYrn9TluUTgvJwrbrbQcO2XI61Wq_JoOA 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.15">18:01:55.591 [print] Response status: 200 body: {
+  &quot;message&quot;: &quot;Đăng xuất thành công&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.134.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.logout-single-call</div>
+      </div>
+      <div class="time-cell passed">32</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.4">18:01:55.607 ✅ TEST PASSED - All validations passed 
+18:01:55.608 Test Case Data: {
+  &quot;bearerToken&quot;: &quot;&quot;,
+  &quot;expectedStatus&quot;: &quot;200&quot;,
+  &quot;expectedResult&quot;: &quot;{\&quot;message\&quot;: \&quot;Logged out successfully\&quot;}&quot;,
+  &quot;testDescription&quot;: &quot;TC1: Đăng xuất thành công với token hợp lệ&quot;,
+  &quot;responseStatus&quot;: &quot;401&quot;,
+  &quot;result&quot;: &quot;{\&quot;success\&quot;:false,\&quot;statusCode\&quot;:401,\&quot;message\&quot;:\&quot;Unauthorized\&quot;,\&quot;path\&quot;:\&quot;/auth/logout\&quot;,\&quot;timestamp\&quot;:\&quot;2025-06-23T09:33:38.230Z\&quot;}&quot;,
+  &quot;testStatus&quot;: &quot;FAIL&quot;,
+  &quot;failureReason&quot;: &quot;Status mismatch: Expected 200, got 401&quot;
+}
+ 
+18:01:55.608 Expected Status: 200 
+18:01:55.608 Expected Result: {&quot;message&quot;: &quot;Logged out successfully&quot;} 
+18:01:55.609 Actual Status: 200 
+18:01:55.609 Test Status: PASS 
+18:01:55.609 Test case #1 - Status: 200, Test Result: PASS 
+18:01:55.610 Đang chạy test case #2: TC2: Đăng xuất thất bại - Không truyền bearer token 
+18:01:55.610 Test case không sử dụng token 
+18:01:55.618 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Thêm header Authorization nếu có bearer token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (bearerToken &amp;&amp; bearerToken.trim() !== &#39;&#39;) karate.set(&#39;Authorization&#39;, &#39;Bearer &#39; + bearerToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(Authorization)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.11">18:01:55.632 request:
+1 &gt; POST http://localhost:3000/auth/logout
+1 &gt; Authorization: #(Authorization)
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:01:55.647 response time in milliseconds: 14
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 120
+1 &lt; ETag: W/&quot;78-GXCgOugFjabevDqqnToWx73bfNs&quot;
+1 &lt; Date: Mon, 23 Jun 2025 11:01:55 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/auth/logout&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-23T11:01:55.645Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling logout API với bearerToken:&#39;, bearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.14">18:01:55.649 [print] Calling logout API với bearerToken:  
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.15">18:01:55.650 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/auth/logout&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-23T11:01:55.645Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.134.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.helpers.logout-single-call</div>
+      </div>
+      <div class="time-cell passed">13</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:karate-config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.4">18:01:55.654 ✅ TEST PASSED - All validations passed 
+18:01:55.654 Test Case Data: {
+  &quot;bearerToken&quot;: &quot;NO_TOKEN&quot;,
+  &quot;expectedStatus&quot;: &quot;401&quot;,
+  &quot;expectedResult&quot;: &quot;{\&quot;error\&quot;: \&quot;Unauthorized\&quot;}&quot;,
+  &quot;testDescription&quot;: &quot;TC2: Đăng xuất thất bại - Không truyền bearer token&quot;,
+  &quot;responseStatus&quot;: &quot;401&quot;,
+  &quot;result&quot;: &quot;{\&quot;success\&quot;:false,\&quot;statusCode\&quot;:401,\&quot;message\&quot;:\&quot;Unauthorized\&quot;,\&quot;path\&quot;:\&quot;/auth/logout\&quot;,\&quot;timestamp\&quot;:\&quot;2025-06-23T09:33:38.312Z\&quot;}&quot;,
+  &quot;testStatus&quot;: &quot;PASS&quot;,
+  &quot;failureReason&quot;: &quot;All validations passed&quot;
+}
+ 
+18:01:55.654 Expected Status: 401 
+18:01:55.654 Expected Result: {&quot;error&quot;: &quot;Unauthorized&quot;} 
+18:01:55.655 Actual Status: 401 
+18:01:55.655 Test Status: PASS 
+18:01:55.655 Test case #2 - Status: 401, Test Result: PASS 
+18:01:55.656 Đang chạy test case #3: TC3: Đăng xuất thất bại - Bearer token không hợp lệ 
+18:01:55.656 Sử dụng bearer token từ Excel: invalid_token_12345 
+18:01:55.667 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url config.baseUrl + &#39;/auth/logout&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment"># Thêm header Authorization nếu có bearer token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (bearerToken &amp;&amp; bearerToken.trim() !== &#39;&#39;) karate.set(&#39;Authorization&#39;, &#39;Bearer &#39; + bearerToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = { Authorization: &#39;#(Authorization)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.11">18:01:55.670 request:
+1 &gt; POST http://localhost:3000/auth/logout
+1 &gt; Authorization: Bearer invalid_token_12345
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:01:55.675 response time in milliseconds: 5
+1 &lt; 401
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 120
+1 &lt; ETag: W/&quot;78-tCBL+IwYQIL8f1cxpEsqTN+B9gk&quot;
+1 &lt; Date: Mon, 23 Jun 2025 11:01:55 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/auth/logout&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-23T11:01:55.674Z&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>def actualStatus = responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.13">
+      <div class="step-ref passed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def actualResponse = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Calling logout API với bearerToken:&#39;, bearerToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.14">18:01:55.677 [print] Calling logout API với bearerToken: invalid_token_12345 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.134.0.call">
+    <div class="step-container" id="0.134.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Response status:&#39;, actualStatus, &#39;body:&#39;, actualResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.134.0.call.0.15">18:01:55.678 [print] Response status: 401 body: {
+  &quot;success&quot;: false,
+  &quot;statusCode&quot;: 401,
+  &quot;message&quot;: &quot;Unauthorized&quot;,
+  &quot;path&quot;: &quot;/auth/logout&quot;,
+  &quot;timestamp&quot;: &quot;2025-06-23T11:01:55.674Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def testResults = results</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Đếm số test cases pass/fail</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def passedTests = []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def failedTests = []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.forEach(testResults, function(test) { if (test.testStatus === &#39;PASS&#39;) passedTests.push(test); else failedTests.push(test); })</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=== LOGOUT TEST SUMMARY ===&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.142">18:01:55.689 [print] === LOGOUT TEST SUMMARY === 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref passed">143</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Total test cases: &#39; + testResults.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.143">18:01:55.690 [print] Total test cases: 3 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref passed">144</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Passed: &#39; + passedTests.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.144">18:01:55.690 [print] Passed: 3 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.145">
+      <div class="step-ref passed">145</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Failed: &#39; + failedTests.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.145">18:01:55.692 [print] Failed: 0 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.146">
+      <div class="step-ref passed">146</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (testResults.length &gt; 0) print (&#39;Success rate: &#39; + Math.round((passedTests.length / testResults.length) * 100) + &#39;%&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Log failed tests</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (failedTests.length &gt; 0) karate.forEach(failedTests, function(test, index) { karate.log(&#39;❌ Failed test #&#39; + (index + 1) + &#39;: &#39; + test.failureReason); })</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref passed">151</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Hoàn thành tất cả test cases logout. Đang ghi kết quả vào Excel...&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.151">18:01:55.707 [print] Hoàn thành tất cả test cases logout. Đang ghi kết quả vào Excel... 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Ghi kết quả vào Excel</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">256</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.155">
+      <div class="step-ref passed">155</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (writeSuccess) karate.log(&#39;✅ Đã ghi kết quả logout vào Excel thành công!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.155">18:01:55.965 ✅ Đã ghi kết quả logout vào Excel thành công! 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.156">
+      <div class="step-ref passed">156</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (!writeSuccess) karate.log(&#39;❌ Lỗi khi ghi kết quả logout vào Excel!&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Warning nếu có test cases failed</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.159">
+      <div class="step-ref passed">159</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (failedTests.length &gt; 0) karate.log(&#39;⚠️ WARNING: &#39; + failedTests.length + &#39; out of &#39; + testResults.length + &#39; test cases failed&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

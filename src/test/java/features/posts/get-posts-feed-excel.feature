@@ -14,6 +14,27 @@ Feature: GetPostsFeed Testing từ Excel - Sheet getPostsFeed
     * print 'Sử dụng global bearer token từ config:', globalBearerToken
 
   Scenario: Chạy tất cả test cases getPostsFeed từ Excel
+    * def evaluateTestCase = 
+      """
+      function(testCase, actualStatus, actualResponse) {
+        var expectedStatus = testCase.expectedStatus;
+        
+        // Kiểm tra Status Code (Bắt buộc)
+        if (actualStatus != expectedStatus) {
+          return {
+            status: 'FAIL',
+            reason: 'Status mismatch: Expected ' + expectedStatus + ', got ' + actualStatus
+          };
+        }
+        
+        // Nếu status code khớp thì PASS
+        return {
+          status: 'PASS',
+          reason: 'All validations passed'
+        };
+      }
+      """
+
     * def runTest = 
       """
       function(testCase, index) {
@@ -59,22 +80,23 @@ Feature: GetPostsFeed Testing từ Excel - Sheet getPostsFeed
           actualResult = 'No response body';
         }
         
-        // Kiểm tra xem kết quả có khớp với expected không (chỉ để log)
-        var isExpectedStatus = (actualStatus == testCase.expectedStatus);
-        if (!isExpectedStatus) {
-          karate.log('STATUS MISMATCH - Expected: ' + testCase.expectedStatus + ', Actual: ' + actualStatus);
-        }
+        // Đánh giá test case
+        var testEvaluation = evaluateTestCase(testCase, actualStatus, response.actualResponse);
         
-        // Log chi tiết để debug
-        karate.log('Test Case Data:', testCase);
-        karate.log('Expected Status:', testCase.expectedStatus);
-        karate.log('Actual Status:', actualStatus);
+        // Log kết quả đánh giá
+        if (testEvaluation.status === 'PASS') {
+          karate.log('✅ TEST PASSED - ' + testEvaluation.reason);
+        } else {
+          karate.log('❌ TEST FAILED - ' + testEvaluation.reason);
+        }
         
         karate.log('Test case #' + (index + 1) + ' - Status: ' + actualStatus + ', Result: ' + actualResult);
         
         return {
           responseStatus: actualStatus,
-          result: actualResult
+          result: actualResult,
+          testStatus: testEvaluation.status,
+          failureReason: testEvaluation.reason
         };
       }
       """
@@ -83,6 +105,26 @@ Feature: GetPostsFeed Testing từ Excel - Sheet getPostsFeed
     * def results = karate.map(testData, runTest)
     * def testResults = results
     * print 'Hoàn thành tất cả test cases getPostsFeed. Đang ghi kết quả vào Excel...'
+    
+    # ===== THỐNG KÊ TEST RESULTS =====
+    * def passedTests = karate.filter(testResults, function(item) { return item.testStatus === 'PASS'; })
+    * def failedTests = karate.filter(testResults, function(item) { return item.testStatus === 'FAIL'; })
+    * def totalTests = testResults.length
+    * def passedCount = passedTests.length
+    * def failedCount = failedTests.length
+    * def successRate = Math.round((passedCount / totalTests) * 100)
+    
+    # Log kết quả tổng kết
+    * print '=================================='
+    * print '📊 GETPOSTSFEED TEST SUMMARY 📊'
+    * print '=================================='
+    * print '📋 Tổng số test: ' + totalTests
+    * print '✅ Passed: ' + passedCount + ' (' + successRate + '%)'
+    * print '❌ Failed: ' + failedCount + ' (' + (100 - successRate) + '%)'
+    * print '=================================='
+    
+    # Log failed tests
+    * if (failedTests.length > 0) karate.forEach(failedTests, function(test, index) { karate.log('❌ Failed test #' + (index + 1) + ': ' + test.failureReason); })
     
     * print 'Ghi kết quả vào Excel...'
     * def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)

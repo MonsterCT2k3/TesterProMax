@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: runners.unlike.UnlikeExcelTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.594 s - in runners.unlike.UnlikeExcelTestRunner

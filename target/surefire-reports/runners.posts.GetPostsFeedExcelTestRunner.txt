@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: runners.posts.GetPostsFeedExcelTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.841 s - in runners.posts.GetPostsFeedExcelTestRunner

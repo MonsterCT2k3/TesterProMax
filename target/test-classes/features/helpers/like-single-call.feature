@@ -9,7 +9,11 @@ Scenario: Gọi API like với bearer token và targetId (type cố định là 
     * configure headers = { Authorization: '#(Authorization)' }
     
     # Xử lý request body với type cố định là "post"
-    * def requestBody = { targetId: '#(targetId)', type: 'post' }
+    # Logic kiểm tra targetId đặc biệt
+    * def requestBody = { type: 'post' }
+    * if (targetId == 'EMPTY') requestBody = { type: 'post' }
+    * if (targetId == 'NULL_VALUE') requestBody = { targetId: null, type: 'post' }
+    * if (targetId != 'EMPTY' && targetId != 'NULL_VALUE') requestBody = { targetId: '#(targetId)', type: 'post' }
     And request requestBody
     When method POST
     Then def actualStatus = responseStatus

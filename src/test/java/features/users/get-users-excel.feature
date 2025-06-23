@@ -14,6 +14,27 @@ Feature: GetUsers Testing từ Excel - Sheet getUsers
     * print 'Sử dụng global bearer token từ config:', globalBearerToken
 
   Scenario: Chạy tất cả test cases getUsers từ Excel
+    * def evaluateTestCase = 
+      """
+      function(testCase, actualStatus, actualResponse) {
+        var expectedStatus = testCase.expectedStatus;
+        
+        // Kiểm tra Status Code (Bắt buộc)
+        if (actualStatus != expectedStatus) {
+          return {
+            status: 'FAIL',
+            reason: 'Status mismatch: Expected ' + expectedStatus + ', got ' + actualStatus
+          };
+        }
+        
+        // Nếu status code khớp thì PASS
+        return {
+          status: 'PASS',
+          reason: 'All validations passed'
+        };
+      }
+      """
+
     * def runTest = 
       """
       function(testCase, index) {
@@ -31,6 +52,16 @@ Feature: GetUsers Testing từ Excel - Sheet getUsers
           limit: limit
         });
         
+        // Đánh giá test case
+        var testEvaluation = evaluateTestCase(testCase, result.actualStatus, result.actualResponse);
+        
+        // Log kết quả đánh giá
+        if (testEvaluation.status === 'PASS') {
+          karate.log('✅ TEST PASSED - ' + testEvaluation.reason);
+        } else {
+          karate.log('❌ TEST FAILED - ' + testEvaluation.reason);
+        }
+        
         // Chuẩn bị kết quả để ghi vào Excel
         var testResult = {
           bearerToken: testCase.bearerToken,
@@ -40,12 +71,14 @@ Feature: GetUsers Testing từ Excel - Sheet getUsers
           expectedStatus: testCase.expectedStatus,
           expectedResult: testCase.expectedResult,
           responseStatus: result.actualStatus,
-          result: JSON.stringify(result.actualResponse)
+          result: JSON.stringify(result.actualResponse),
+          testStatus: testEvaluation.status,
+          failureReason: testEvaluation.reason
         };
         
         testResults.push(testResult);
         
-        karate.log('✅ Test case #' + (index + 1) + ' completed - Status: ' + result.actualStatus);
+        karate.log('Test case #' + (index + 1) + ' completed - Status: ' + result.actualStatus);
         
         return testResult;
       }
@@ -54,6 +87,26 @@ Feature: GetUsers Testing từ Excel - Sheet getUsers
     # Chạy tất cả test cases
     * def results = karate.map(testData, runTest)
     * print 'Đã hoàn thành ' + results.length + ' test cases'
+
+    # ===== THỐNG KÊ TEST RESULTS =====
+    * def passedTests = karate.filter(testResults, function(item) { return item.testStatus === 'PASS'; })
+    * def failedTests = karate.filter(testResults, function(item) { return item.testStatus === 'FAIL'; })
+    * def totalTests = testResults.length
+    * def passedCount = passedTests.length
+    * def failedCount = failedTests.length
+    * def successRate = Math.round((passedCount / totalTests) * 100)
+    
+    # Log kết quả tổng kết
+    * print '=================================='
+    * print '📊 GETUSERS TEST SUMMARY 📊'
+    * print '=================================='
+    * print '📋 Tổng số test: ' + totalTests
+    * print '✅ Passed: ' + passedCount + ' (' + successRate + '%)'
+    * print '❌ Failed: ' + failedCount + ' (' + (100 - successRate) + '%)'
+    * print '=================================='
+    
+    # Log failed tests
+    * if (failedTests.length > 0) karate.forEach(failedTests, function(test, index) { karate.log('❌ Failed test #' + (index + 1) + ': ' + test.failureReason); })
 
     # Ghi kết quả vào Excel
     * def writeSuccess = writeToExcel(excelFilePath, sheetName, testResults)

@@ -20,7 +20,7 @@ function fn(excelFilePath, sheetName) {
 
         // Tạo header với thứ tự mới và thêm cột kết quả
         var headerRow = sheet.createRow(0);
-        var headers = ['bearerToken', 'followingId', 'testDescription', 'expectedStatus', 'expectedResult', 'responseStatus', 'result'];
+        var headers = ['bearerToken', 'followingId', 'testDescription', 'expectedStatus', 'expectedResult', 'responseStatus', 'result', 'testStatus', 'failureReason'];
         for (var i = 0; i < headers.length; i++) {
             headerRow.createCell(i).setCellValue(headers[i]);
         }
@@ -199,6 +199,8 @@ function fn(excelFilePath, sheetName) {
             row.createCell(4).setCellValue(testData[i].expectedResult);
             row.createCell(5).setCellValue(testData[i].responseStatus);
             row.createCell(6).setCellValue(testData[i].result);
+            row.createCell(7).setCellValue(''); // testStatus - sẽ được điền sau
+            row.createCell(8).setCellValue(''); // failureReason - sẽ được điền sau
         }
 
         // Lưu workbook

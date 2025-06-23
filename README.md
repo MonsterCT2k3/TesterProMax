@@ -297,22 +297,22 @@ mvn test -Dtest=runners.auth.ChangePasswordExcelTestRunner
 #### 5. Chạy Logout tests
 ```bash
 # Chạy tất cả logout tests
-mvn test -Dtest=runners.auth.LogoutExcelTestRunner
+mvn test -Dtest=LogoutExcelTestRunner
 ```
 
 #### 6. Chạy Follows tests
 ```bash
 # Chạy tất cả follows tests
-mvn test -Dtest=runners.follows.FollowsExcelTestRunner
+mvn test -Dtest=FollowsExcelTestRunner
 
 # Chạy tất cả get followers tests
-mvn test -Dtest=runners.follows.GetFollowerExcelTestRunner
+mvn test -Dtest=GetFollowerExcelTestRunner
 
 # Chạy tất cả get following tests
-mvn test -Dtest=runners.follows.GetFollowingExcelTestRunner
+mvn test -Dtest=GetFollowingExcelTestRunner
 
 # Chạy tất cả unfollow tests
-mvn test -Dtest=runners.follows.UnfollowExcelTestRunner
+mvn test -Dtest=UnfollowExcelTestRunner
 ```
 
 #### 7. Chạy Like tests
@@ -321,7 +321,7 @@ mvn test -Dtest=runners.follows.UnfollowExcelTestRunner
 mvn test -Dtest=runners.setup_data.SetupLikeDataRunner
 
 # Chạy tất cả like tests
-mvn test -Dtest=runners.like.LikeExcelTestRunner
+mvn test -Dtest=LikeExcelTestRunner
 ```
 
 #### 8. Chạy Unlike tests
@@ -330,7 +330,7 @@ mvn test -Dtest=runners.like.LikeExcelTestRunner
 mvn test -Dtest=runners.setup_data.SetupUnlikeDataRunner
 
 # Chạy tất cả unlike tests
-mvn test -Dtest=runners.unlike.UnlikeExcelTestRunner
+mvn test -Dtest=UnlikeExcelTestRunner
 ```
 
 #### 9. Chạy GetPostsFeed tests
@@ -339,7 +339,7 @@ mvn test -Dtest=runners.unlike.UnlikeExcelTestRunner
 mvn test -Dtest=runners.setup_data.SetupGetPostsFeedDataRunner
 
 # Chạy tất cả getPostsFeed tests
-mvn test -Dtest=runners.posts.GetPostsFeedExcelTestRunner
+mvn test -Dtest=GetPostsFeedExcelTestRunner
 ```
 
 #### 10. Chạy GetUsers tests
@@ -348,7 +348,7 @@ mvn test -Dtest=runners.posts.GetPostsFeedExcelTestRunner
 mvn test -Dtest=runners.setup_data.SetupGetUsersDataRunner
 
 # Chạy tất cả getUsers tests
-mvn test -Dtest=runners.users.GetUsersExcelTestRunner
+mvn test -Dtest=GetUsersExcelTestRunner
 ```
 
 #### 11. Chạy tất cả tests

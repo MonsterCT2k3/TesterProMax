@@ -30,7 +30,7 @@ function(filePath, sheetName) {
             }
         }
 
-        // Tạo header row theo ảnh
+        // Tạo header row với testStatus và failureReason
         var headerRow = sheet.createRow(0);
         var headers = [
             'bearerToken',
@@ -38,7 +38,9 @@ function(filePath, sheetName) {
             'expectedResult',
             'testDescription',
             'responseStatus',
-            'result'
+            'result',
+            'testStatus',
+            'failureReason'
         ];
 
         for (var i = 0; i < headers.length; i++) {
@@ -78,6 +80,8 @@ function(filePath, sheetName) {
             dataRow.createCell(3).setCellValue(testCase.testDescription);
             dataRow.createCell(4).setCellValue(''); // responseStatus - sẽ được điền sau
             dataRow.createCell(5).setCellValue(''); // result - sẽ được điền sau
+            dataRow.createCell(6).setCellValue(''); // testStatus - sẽ được điền sau
+            dataRow.createCell(7).setCellValue(''); // failureReason - sẽ được điền sau
         }
 
         // Auto-size columns
