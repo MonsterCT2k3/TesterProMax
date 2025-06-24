@@ -279,19 +279,19 @@ mvn test -Dtest=runners.setup_data.SetupGetUsersDataRunner
 #### 2. Chạy Login tests
 ```bash
 # Chạy tất cả login tests
-mvn test -Dtest=runners.auth.LoginExcelTestRunner
+mvn test -Dtest=LoginExcelTestRunner
 ```
 
 #### 3. Chạy Register tests
 ```bash
 # Chạy tất cả register tests
-mvn test -Dtest=runners.auth.RegisterExcelTestRunner
+mvn test -Dtest=RegisterExcelTestRunner
 ```
 
 #### 4. Chạy Change Password tests
 ```bash
 # Chạy tất cả change password tests
-mvn test -Dtest=runners.auth.ChangePasswordExcelTestRunner
+mvn test -Dtest=ChangePasswordExcelTestRunner
 ```
 
 #### 5. Chạy Logout tests
@@ -380,6 +380,20 @@ mvn test -Dtest="runners.users.*"
 ```javascript
 bearerToken: 'TOKEN_MỚI_CỦA_BẠN'
 ```
+
+#Kiểm thử hiệu năng
+# Sequential (100% tuần tự)
+mvn test -Dtest=SequentialLoginRunner
+
+# Parallel (10 threads đồng thời)  
+mvn test -Dtest=LoginPerfRunner
+
+# Concurrent (50 threads đồng thời)
+mvn test -Dtest=Concurrent50ThreadsRunner
+
+# Concurrent (100 threads đồng thời)
+mvn test -Dtest=ConcurrentLoginRunner
+
 
 ## 📊 Cấu trúc file Excel
 

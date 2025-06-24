@@ -1,3 +1,4 @@
+C:\Users\monst\karate-tests\src\test\java\runners\performance\SequentialLoginRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\follows\GetFollowingExcelTestRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\setup_data\SetupGetPostsFeedDataRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\auth\RegisterExcelTestRunner.java
@@ -20,6 +21,7 @@ C:\Users\monst\karate-tests\src\test\java\runners\follows\FollowsExcelTestRunner
 C:\Users\monst\karate-tests\src\test\java\runners\performance\SimplePerfRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\performance\LoginPerfRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\setup_data\SetupDataRunner.java
+C:\Users\monst\karate-tests\src\test\java\runners\performance\Concurrent50ThreadsRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\posts\GetPostsFeedExcelTestRunner.java
 C:\Users\monst\karate-tests\src\test\java\runners\users\GetUsersExcelTestRunner.java
 C:\Users\monst\karate-tests\src\test\java\performance\utils\PerformanceReport.java

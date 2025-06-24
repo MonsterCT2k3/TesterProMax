@@ -114,4 +114,4 @@ Feature: Login API Performance Test - 100 Concurrent Calls
       | testit3@gmail.com     | Password123 |
       | testit5@gmail.com     | Password123 |
       | testit@gmail.com      | Password123 |
-      | testit2@gmail.com     | Password123 | 
+      | testit2@gmail.com     | Password123 |

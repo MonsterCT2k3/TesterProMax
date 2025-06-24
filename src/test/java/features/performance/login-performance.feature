@@ -101,23 +101,4 @@ Feature: Login API Performance Test
       | testit5@gmail.com     | Password123 |
       | testit@gmail.com      | Password123 |
       | testit2@gmail.com     | Password123 |
-      | nam@gmail.com         | 12345      |
-      | quang1@gmail.com      | quang1      |
-      | test@example.com      | Password12d |
-      | test2@example.com     | Password12 |
-      | test28@example.com    | Password12s |
-      | testit4@gmail.com     | Password12g |
-      | testit3@gmail.com     | Password123 |
-      | testit5@gmail.com     | Password123 |
-      | testit@gmail.com      | Password123 |
-      | testit2@gmail.com     | Password123 |
-      | nam@gmail.com         | 123456      |
-      | quang1@gmail.com      | quang1      |
-      | test@example.com      | Password123 |
-      | test2@example.com     | Password123 |
-      | test28@example.com    | Password123 |
-      | testit4@gmail.com     | Password123 |
-      | testit3@gmail.com     | Password123 |
-      | testit5@gmail.com     | Password123 |
-      | testit@gmail.com      | Password123 |
-      | testit2@gmail.com     | Password123 |
+      
