@@ -9,7 +9,7 @@ function fn() {
         baseUrl: 'http://localhost:3000',
         timeout: 30000,
         // Bearer token for changePassword tests - update this token as needed
-        bearerToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNjI4NDUzMi04ZjFlLTRiMDUtYWM1NC1kODAzNzM4NmU4MGMiLCJ1c2VybmFtZSI6InVzZXJubzIiLCJyb2xlIjowLCJpYXQiOjE3NTA2OTQzNTQsImV4cCI6MTc1MDY5Nzk1NH0.cn4pcMTzJbKyd0aw-bN_KvZNRCfEwxef9wljw6vUgkw'
+        bearerToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwODUxNWIwNS0yZDNlLTQ3ODktYWQ2MC1kYjM1NTI1YTQ5NzAiLCJ1c2VybmFtZSI6Im5hbSIsInJvbGUiOjAsImlhdCI6MTc1MDc2NTIwMCwiZXhwIjoxNzUwNzY4ODAwfQ.Af3_A57JrMLa24ZYOUZRdkDHRLYpEEYRaCVTHzBkY5w'
     };
 
     // Cấu hình headers mặc định

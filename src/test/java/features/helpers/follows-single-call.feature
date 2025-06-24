@@ -8,9 +8,9 @@ Scenario: Gọi API follows với bearer token và followingId
     * if (bearerToken && bearerToken.trim() !== '') karate.set('Authorization', 'Bearer ' + bearerToken)
     * configure headers = { Authorization: '#(Authorization)' }
     
-    # Xử lý request body với null values
+    # Xử lý request body với null values và EMPTY
     * def followingIdValue = followingId === 'NULL_VALUE' ? null : followingId
-    * def requestBody = { followingId: '#(followingIdValue)' }
+    * def requestBody = followingId === 'EMPTY' ? {} : { followingId: '#(followingIdValue)' }
     And request requestBody
     When method POST
     Then def actualStatus = responseStatus
